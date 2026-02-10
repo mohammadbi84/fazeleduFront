@@ -14,19 +14,22 @@
     <link rel="stylesheet" href="asset/css/styles.css">
     <link rel="stylesheet" href="asset/css/main-menu.css">
     <link rel="stylesheet" href="asset/css/bookmark.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
 </head>
 
 <body>
+    <div class="container" id="test_container"></div>
     <header>
         <!-- بوکمارک -->
         <div class="bookmark-container">
             <div class="bookmark expanded" id="bookmark">
-                <div class="swiper" id="bookmarkSlider">
+                <!-- <div class="swiper" id="bookmarkSlider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide bookmark-content px-0" style="height: 60px;" data-height="60"
                             data-delay="5000">
                             <div class="bookmark-item">
-                                <!-- محتوای body که می‌تواند شامل عکس یا بک‌گراند باشد -->
                                 <div class="bookmark-media">
                                     متن بوکمارک یا تصویر یا ویدیو یا هر محتوای دیگری که در دیتابیس ذخیره شده است.
                                 </div>
@@ -35,28 +38,76 @@
                         <div class="swiper-slide bookmark-content px-0" style="height: 60px;" data-height="60"
                             data-delay="5000">
                             <div class="bookmark-item">
-                                <!-- محتوای body که می‌تواند شامل عکس یا بک‌گراند باشد -->
                                 <div class="bookmark-media">
                                     تستست تست تست ست ستستستستتست ستتستستستست
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div> -->
+                <div class="container p-0" id="bookmark_container">
+                    <div class="splide" id="stories-slider">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <!-- Story items will be added here by JavaScript -->
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <button class="btn btn-bookmark" id="bookmarkToggle"><i class="fa-solid fa-chevron-up"></i></button>
         </div>
+        <!-- Story Modal -->
+        <div class="modal fade story-modal" id="storyModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <span class="story-close" data-bs-dismiss="modal">&times;</span>
+                        <div class="story-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                        <div class="story-header">
+                            <img src="" alt="Profile" class="story-profile-img">
+                            <span class="username">username</span>
+                            <span class="time">2h ago</span>
+                        </div>
+                        <div class="story-content">
+                            <!-- Content will be inserted here -->
+                        </div>
+                        <div class="story-nav">
+                            <button class="next-story"><i class="fas fa-chevron-right"></i></button>
+                            <button class="prev-story"><i class="fas fa-chevron-left"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- navbar -->
         <div class="main-menu rounded-3">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container position-relative" id="navbar_container">
-                    <a class="navbar-brand fw-bold d-flex align-items-center" href="/">
-                        bxkjccjn
-                    </a>
+            <nav class="navbar navbar-expand-lg h-100">
+                <div class="container position-relative h-100" id="navbar_container">
+                    <div class="navbar-brand fw-bold d-flex align-items-center">
+                        09912513002
+                        <i class="fa-solid fa-phone-volume fa-lg ms-3"></i>
+                    </div>
                     <button class="navbar-toggler" type="button" id="mobileMenuToggle">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse justify-content-between h-100" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0 px-0">
                             <!-- دکمه دسته‌بندی‌ها -->
                             <div class="categories-dropdown d-flex" id="categoryTrigger">
@@ -94,15 +145,19 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                    جدیدترین ها</a>
+                                    رزرو وقت مشاوره</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                    محبوب ترین ها </a>
+                                    آزمون آنلاین </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                    شاخه های آموزشی </a>
+                                    مرکز دانلود </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    درباره ما </a>
                             </li>
                         </ul>
                         <!-- cart, favorites and login ================================================================================================================== -->
@@ -110,8 +165,8 @@
                             <!--  favorites menu  -->
                             <div class="favorites-container">
                                 <a href="#" class="cart-btn">
-                                    <span class="cart-badge favorites-badge"></span>
-                                    <img src="asset/svg/heart-solid-full (1).svg" alt="favorites" width="24">
+                                    <span class="cart-badge favorites-badge">0</span>
+                                    <img src="asset/svg/heart-solid-full.svg" alt="favorites" width="22">
                                 </a>
                             </div>
                             <div class="compare-container">
@@ -119,14 +174,14 @@
                                     <span class="cart-badge compare-badge">
                                         5
                                     </span>
-                                    <img src="asset/svg/shuffle-solid-full.svg" alt="compare" width="24">
+                                    <img src="asset/svg/bell-solid-full.svg" alt="compare" width="18">
                                 </a>
                             </div>
                             <!-- منوی دراپ‌داون با انیمیشن -->
                             <div class="cart-container">
                                 <a href="#" class="cart-btn">
                                     <span class="cart-badge shopping-cart-badge">2</span>
-                                    <img src="asset/svg/cart-shopping-solid-full (1).svg" alt="cart" width="24">
+                                    <img src="asset/svg/basket-shopping-solid-full.svg" alt="cart" width="24">
                                 </a>
                             </div>
                             <!-- ورود و ثبت نام -->
@@ -263,6 +318,8 @@
     <!-- scripts -->
     <!-- bootstrap -->
     <script src="asset/js/bootstrap.js"></script>
+    <!-- jquery -->
+    <script src="asset/js/jquery.js"></script>
     <!-- swiper js -->
     <script src="asset/js/swiper-bundle.min.js"></script>
     <!-- font  -->

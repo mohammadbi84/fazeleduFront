@@ -17,7 +17,11 @@
     margin-bottom: 20px;
     overflow: hidden;
     /* اضافه شده */
-    background: transparent;
+    /* background: transparent; */
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -193,4 +197,210 @@
 
 .login-link:hover {
     color: var(--primary) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+#stories-slider {
+    direction: ltr;
+    width: 100%;
+}
+
+#stories-slider .splide__arrow {
+    display: none;
+    background-color: #606060;
+    border-radius: 7px;
+    height: 30px;
+    width: 30px;
+}
+
+#stories-slider:hover .splide__arrow {
+    display: flex;
+    background-color: #606060;
+}
+
+.splide:not(.is-overflow) .splide__arrows {
+    display: none;
+}
+
+#stories-slider .splide__arrow--prev {
+    left: 8px;
+}
+
+#stories-slider .splide__arrow--next {
+    right: 8px;
+}
+
+#stories-slider .splide__arrow svg {
+    fill: #fff;
+    height: 1em;
+    width: 1em;
+}
+
+#stories-slider-list {
+    padding: 10px 0 !important;
+}
+
+.story-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    background: #f1f1f17d;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0px 0px 6px #3d3d3d7d;
+}
+
+.story-item:hover {
+    transform: scale(1.05);
+}
+
+.story-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.story-username {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80px;
+}
+
+.story-modal .modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.story-modal .modal-body {
+    padding: 0;
+    position: relative;
+}
+
+.story-content {
+    width: 100%;
+    height: 80vh;
+    max-height: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.story-content img,
+.story-content video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: black;
+}
+
+.story-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    z-index: 1;
+}
+
+.story-nav button {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-header {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.story-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+
+.story-header .username {
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.story-header .time {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+.story-progress {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+    z-index: 1;
+    display: flex;
+    gap: 5px;
+}
+
+.progress-bar {
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.4);
+    flex-grow: 1;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    transition: width 0.1s linear;
+}
+
+.story-close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .story-content {
+        height: 100vh;
+        border-radius: 0;
+    }
 }

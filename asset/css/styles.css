@@ -98,7 +98,7 @@
     --accent-hover: #f59e0b;
 
     /* Backgrounds */
-    --bg-main: #f8fafc;
+    --bg-main: #f8f9fa;
     --bg-card: #ffffff;
     --bg-dark: #0f172a;
 
@@ -120,7 +120,7 @@
 
 body {
     font-family: "IRANSansX";
-    background-color: var(--bg-main);
+    background-color: #ccc;
     min-height: 200vh;
 }
 

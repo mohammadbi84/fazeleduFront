@@ -3,12 +3,12 @@
     --main-menu-back-small: rgba(255, 255, 255, 0.8);
     --main-menu-margin-top: 20px;
     --main-menu-margin: 11%;
-    --main-menu-padding-default: 10px;
-    --main-menu-padding-small: 5px;
+    --main-menu-padding-default: 16px;
+    --main-menu-padding-small: 16px;
     /*  اگر متغیر --raduis را تعریف نکرده اید، این خط را اضافه کنید: */
     --raduis: 5px;
     /* یا هر مقدار دلخواه دیگر */
-    --bookmark-height: 60px;
+    --bookmark-height: 65px;
 }
 
 .main-menu {
@@ -19,9 +19,15 @@
     top: var(--main-menu-margin-top);
     left: var(--main-menu-margin);
     right: var(--main-menu-margin);
-    padding: var(--main-menu-padding-default) var(--main-menu-padding-default);
+    padding: 0;
     transition: 500ms;
     box-sizing: content-box !important;
+    /* overflow: hidden; */
+    box-shadow: 0px 4px 5px #8484845e;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-menu.small {
@@ -29,7 +35,7 @@
     left: 0;
     right: 0;
     top: 5px;
-    padding: var(--main-menu-padding-small) 100px;
+    /* padding: var(--main-menu-padding-small) 100px; */
     /*background-color: var(--main-menu-back-small);  اگر می خواهید پس زمینه نیمه شفاف باشد */
     /*backdrop-filter: blur(2px); اگر می خواهید پس زمینه محو باشد */
     box-shadow: 0px 4px 5px #8484845e;
@@ -37,7 +43,7 @@
 }
 
 .main-menu.with-bookmark {
-    top: calc(var(--bookmark-height) + 10px);
+    top: calc(var(--bookmark-height) + 15px);
 }
 
 .main-menu.smallBookmark {
@@ -49,8 +55,42 @@
     padding-right: 0;
 }
 
+.main-menu .navbar {
+    width: 100%;
+}
+
 .main-menu .navbar .navbar-brand {
-    margin-right: 0;
+    background: var(--primary);
+    color: #fff;
+    position: absolute;
+    top: -8px;
+    bottom: -8px;
+    right: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 17px 20px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: 500 !important;
+}
+
+.main-menu.small .navbar .navbar-brand {
+    bottom: 12px;
+    top: 12px;
+    border-radius: 8px;
+    right: 12px;
+}
+
+.main-menu .navbar .navbar-collapse {
+    padding-right: 160px;
+}
+
+.main-menu.small .navbar .navbar-collapse {
+    padding-right: 165px;
+}
+
+#stories-slider-track {
+    transition: all 0.3 ease;
 }
 
 .main-menu .navbar .navbar-brand img {
@@ -75,7 +115,7 @@
 }
 
 .main-menu .navbar .btn-text:hover {
-    /*background-color: var(--primary-color--50); */
+    /*background-color: var(--primary--50); */
     color: white !important;
 }
 
@@ -93,11 +133,11 @@
 }
 
 .main-menu .nav-link:hover {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .main-menu .nav-link:hover .badge-percent-svg path {
-    fill: var(--primary-color);
+    fill: var(--primary);
 }
 
 /* انیمیشن خط زیر لینک‌ها */
@@ -108,7 +148,7 @@
     right: 12%;
     width: 0;
     height: 1.5px;
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     transition: width 0.3s ease;
 }
 
@@ -132,6 +172,13 @@
     display: block;
     margin-top: 0;
 } */
+.button-container {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 10px;
+}
 
 
 #navbarCartList::-webkit-scrollbar {
@@ -199,7 +246,7 @@
 }
 
 .category-item:hover {
-    color: var(--primary-color);
+    color: var(--primary);
     padding-right: 2rem;
 }
 
@@ -236,7 +283,7 @@
 
 .submenu-item:hover {
     background-color: #f8f9fa;
-    color: var(--primary-color);
+    color: var(--primary);
     padding-right: 2rem;
 }
 
@@ -263,7 +310,7 @@
     right: -10px;
     background: white;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
-    border-top: 2px solid var(--primary-color);
+    border-top: 2px solid var(--primary);
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
@@ -321,14 +368,14 @@
     display: inline-block;
     width: 4px;
     height: 24px;
-    background: var(--primary-color);
+    background: var(--primary);
     border-radius: 2px;
     margin-left: 10px;
     transition: all 0.3s ease;
 }
 
 .main-categories:hover {
-    color: var(--primary-color);
+    color: var(--primary);
     background: rgba(25, 135, 84, 0.05);
     text-decoration: none;
     padding-right: 12px;
@@ -375,13 +422,13 @@
 }
 
 .sub-categories a:hover {
-    color: var(--primary-color);
+    color: var(--primary);
     transform: translateX(-3px);
 }
 
 .sub-categories a:hover::before {
-    border-color: var(--primary-color);
-    background: var(--primary-color);
+    border-color: var(--primary);
+    background: var(--primary);
 }
 
 /* افکت نرم‌تر برای تمام منو */
@@ -485,11 +532,11 @@
     padding: 0;
     padding-top: 0px;
     position: absolute !important;
-    top: -3px !important;
-    right: -1px;
+    top: 0px !important;
+    right: 0px;
     width: 15px;
     height: 15px;
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     font-size: 10px;
     display: flex;
     align-items: center;
@@ -503,13 +550,13 @@
 .compare-dropdown {
     position: absolute;
     top: 75px;
-    left: -10px;
+    left: 0;
     width: 340px;
     background: white;
     border: 1px solid #dee2e6;
     border-radius: 8px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
-    border-top: 2px solid var(--primary-color);
+    border-top: 2px solid var(--primary);
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
@@ -518,11 +565,11 @@
 }
 
 .favorites-dropdown {
-    left: -10px;
+    left: 0;
 }
 
 .compare-dropdown {
-    left: -10px;
+    left: 0;
 }
 
 .cart-container:hover .cart-dropdown {
@@ -602,7 +649,7 @@
 
 .cart-item-price {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--primary);
     margin-bottom: 8px;
 }
 
@@ -687,7 +734,7 @@
 
 .favorites-item-price {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--primary);
     margin-bottom: 8px;
 }
 
@@ -729,7 +776,7 @@
 
 .compare-item-price {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--primary);
     margin-bottom: 8px;
 }
 
@@ -800,7 +847,7 @@
 
 .btn-checkout {
     /* flex: 1; */
-    background: var(--primary-color);
+    background: var(--primary);
     color: white;
     border: none;
     padding: 10px;
