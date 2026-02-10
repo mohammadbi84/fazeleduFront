@@ -53,7 +53,7 @@ function toggleBookmark() {
     BookmarkMenu.style.background = "var(--primary)";
     bookmarkToggle.innerHTML = '<i class="fa-solid fa-chevron-down"></i>';
     bookmark_container.style.display = "none";
-    mainMenu.classList.remove("with-bookmark", "smallBookmark");
+    mainMenu.classList.remove("with-bookmark");
     setCssVar("--bookmark-height", `5px`);
     // توقف اسلایدر
     // bookmarkSwiper.autoplay.stop();
@@ -64,7 +64,7 @@ function toggleBookmark() {
     bookmark_container.style.display = "block";
     setCssVar("--bookmark-height", `65px`);
 
-    mainMenu.classList.add("with-bookmark", "smallBookmark");
+    mainMenu.classList.add("with-bookmark");
     bookmarkToggle.innerHTML = '<i class="fa-solid fa-chevron-up"></i>';
 
     // راه‌اندازی مجدد اسلایدر
