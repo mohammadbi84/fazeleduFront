@@ -76,6 +76,13 @@
     font-weight: 500 !important;
 }
 
+.main-menu .navbar .nav-item{
+    font-size: 16px;
+}
+.main-menu .navbar .categories-btn{
+    font-size: 16px;
+}
+
 .main-menu.small .navbar .navbar-brand {
     bottom: 12px;
     top: 12px;
@@ -307,9 +314,9 @@
 /* منوی دسته‌بندی برای دسکتاپ */
 .category-menu {
     position: absolute;
-    top: 75px;
-    left: -10px;
-    right: -10px;
+    top: 90px;
+    left: 0px;
+    right: 0px;
     background: white;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
     border-top: 2px solid var(--primary);
@@ -330,7 +337,7 @@
 }
 
 .category-menu.small {
-    top: 75px;
+    top: 90px;
 }
 
 .category-content {
@@ -378,7 +385,7 @@
 
 .main-categories:hover {
     color: var(--primary);
-    background: rgba(25, 135, 84, 0.05);
+    background: #00b3ff15;
     text-decoration: none;
     padding-right: 12px;
 }
@@ -551,7 +558,7 @@
 .favorites-dropdown,
 .compare-dropdown {
     position: absolute;
-    top: 75px;
+    top: 90px;
     left: 0;
     width: 340px;
     background: white;
@@ -861,7 +868,7 @@
 }
 
 .btn-checkout:hover {
-    background: #146c43;
+    background: var(--primary-hover);
 }
 
 .btn-view-cart {

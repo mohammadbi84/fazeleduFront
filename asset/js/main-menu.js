@@ -33,14 +33,14 @@ function initMainMenu() {
         mainMenu.classList.add("small");
         categoryMenu.classList.add("small");
         if (favorites_dropdown) {
-          favorites_dropdown.style.top = "65px";
+          favorites_dropdown.style.top = "90px";
           favorites_dropdown.style.left = "14px";
         }
         cart_dropdown.style.left = "14px";
         compare_dropdown.style.left = "14px";
-        compare_dropdown.style.top = "65px";
-        cart_dropdown.style.top = "65px";
-        categoriesMenu.style.top = "65px";
+        compare_dropdown.style.top = "90px";
+        cart_dropdown.style.top = "90px";
+        categoriesMenu.style.top = "90px";
         categoriesMenu.style.left = "14px";
         categoriesMenu.style.right = "14px";
 
@@ -52,14 +52,14 @@ function initMainMenu() {
         mainMenu.classList.remove("small");
         categoryMenu.classList.remove("small");
         if (favorites_dropdown) {
-          favorites_dropdown.style.top = "75px";
+          favorites_dropdown.style.top = "90px";
           favorites_dropdown.style.left = "0";
         }
         cart_dropdown.style.left = "0";
         compare_dropdown.style.left = "0";
-        cart_dropdown.style.top = "75px";
-        compare_dropdown.style.top = "75px";
-        categoriesMenu.style.top = "75px";
+        cart_dropdown.style.top = "90px";
+        compare_dropdown.style.top = "90px";
+        categoriesMenu.style.top = "90px";
         categoriesMenu.style.left = "0";
         categoriesMenu.style.right = "0";
 

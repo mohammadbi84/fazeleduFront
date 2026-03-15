@@ -81,11 +81,11 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 1,
       username: "travel_lover",
-      profileImg: "https://randomuser.me/api/portraits/women/44.jpg",
+      profileImg: "/asset/img/1.png",
       content: [
         {
           type: "image",
-          url: "https://source.unsplash.com/random/600x800/?mountain",
+          url: "/asset/img/1.png",
           duration: 5,
         },
       ],
@@ -94,11 +94,11 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 2,
       username: "foodie_adventures",
-      profileImg: "https://randomuser.me/api/portraits/men/32.jpg",
+      profileImg: "/asset/img/2.png",
       content: [
         {
           type: "image",
-          url: "https://source.unsplash.com/random/600x800/?restaurant",
+          url: "/asset/img/2.png",
           duration: 5,
         },
       ],
@@ -107,11 +107,11 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 3,
       username: "fitness_guru",
-      profileImg: "https://randomuser.me/api/portraits/women/65.jpg",
+      profileImg: "/asset/img/3.png",
       content: [
         {
           type: "image",
-          url: "https://source.unsplash.com/random/600x800/?gym",
+          url: "/asset/img/3.png",
           duration: 5,
         },
       ],
@@ -120,54 +120,15 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 4,
       username: "tech_geek",
-      profileImg: "https://randomuser.me/api/portraits/men/75.jpg",
+      profileImg: "/asset/img/4.png",
       content: [
         {
-          type: "video",
-          url: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_5mb.mp4",
+          type: "image",
+          url: "/asset/img/4.png",
           duration: 20,
         },
       ],
       time: "6h ago",
-    },
-    {
-      id: 5,
-      username: "fashion_icon",
-      profileImg: "https://randomuser.me/api/portraits/women/85.jpg",
-      content: [
-        {
-          type: "image",
-          url: "https://source.unsplash.com/random/600x800/?model",
-          duration: 5,
-        },
-      ],
-      time: "3h ago",
-    },
-    {
-      id: 6,
-      username: "pet_lover",
-      profileImg: "https://randomuser.me/api/portraits/women/22.jpg",
-      content: [
-        {
-          type: "image",
-          url: "https://source.unsplash.com/random/600x800/?cat",
-          duration: 5,
-        },
-      ],
-      time: "5h ago",
-    },
-    {
-      id: 7,
-      username: "music_producer",
-      profileImg: "https://randomuser.me/api/portraits/men/45.jpg",
-      content: [
-        {
-          type: "video",
-          url: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_4mb.mp4",
-          duration: 18,
-        },
-      ],
-      time: "8h ago",
     },
   ];
 
