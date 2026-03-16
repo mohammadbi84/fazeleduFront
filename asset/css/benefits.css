@@ -1,0 +1,16 @@
+.nav-pills .nav-link {
+    width: 100%;
+    border-radius: 0;
+    color: var(--text-main);
+    position: relative;
+    right: 1px;
+    padding-left: 40px;
+    padding-right: 0;
+    text-align: right;
+}
+
+.nav-pills .nav-link.active {
+    background: transparent;
+    color: var(--primary);
+    box-shadow: 2px 0px 0 var(--primary) inset;
+}

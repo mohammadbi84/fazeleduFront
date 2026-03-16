@@ -15,6 +15,18 @@
     <link rel="stylesheet" href="asset/css/main-menu.css">
     <link rel="stylesheet" href="asset/css/bookmark.css">
     <link rel="stylesheet" href="https://lib.arvancloud.ir/splidejs/4.1.4/css/splide.min.css">
+    <!-- slider -->
+    <link rel="stylesheet" href="asset/css/slider.css">
+    <!-- tiny slider -->
+    <link rel="stylesheet" href="asset/css/tiny-slider.css">
+    <!-- video -->
+    <link rel="stylesheet" href="asset/css/video.css">
+
+    <!-- benefits -->
+    <link rel="stylesheet" href="asset/css/benefits.css">
+
+    <link rel="stylesheet" href="https://lib.arvancloud.ir/bootstrap-icons/1.9.1/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -310,7 +322,211 @@
         </div>
     </header>
     <main>
-        <div class="container border" style="margin-top: 120px;height: 100vh;">fghjk</div>
+        <!-- slider start -->
+        <section class="slider">
+            <div class="top-slider-wrapper d-flex gap-3 mb-5">
+                <!-- Main Slider -->
+                <div class="top-slider-container flex-grow-1 position-relative">
+                    <div class="top-slider">
+                        <div class="item position-relative" data-duration="5000">
+                            <img src="/asset/img/sliders/island_pink_supermoon-wallpaper-1920x1080.jpg"
+                                class="img-fluid w-100 h-100" style="object-fit: cover;" alt="تست">
+
+                            <div class="slider-box-container">
+                                <div class="slider-text-box">
+                                    <div class="slider-text-box-item">
+                                        <h3>عنوان اصلی اسلایدر اول بصورت تستی</h3>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است.</p>
+                                        <div class="d-flex justify-content-end align-items-center gap-4">
+                                            <button class="btn btn-more-info px-4 py-2">اطلاعات بیشتر</button>
+                                            <button class="btn btn-accent px-4 py-2">
+                                                <i class="bi bi-arrow-left ms-2"></i>
+                                                همین حالا ثبت نام کنید
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item position-relative" data-duration="5000">
+                            <img src="/asset/img/sliders/oriental_fantasy_art-wallpaper-1920x1080.jpg"
+                                class="img-fluid w-100 h-100" style="object-fit: cover;" alt="تست">
+
+                            <div class="slider-box-container">
+                                <div class="slider-text-box">
+                                    <div class="slider-text-box-item">
+                                        <h3>عنوان اصلی اسلایدر دوم</h3>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است.</p>
+                                        <div class="d-flex justify-content-end align-items-center gap-4">
+                                            <button class="btn btn-more-info px-4 py-2">اطلاعات بیشتر</button>
+                                            <button class="btn btn-accent px-4 py-2">
+                                                <i class="bi bi-arrow-left ms-2"></i>
+                                                همین حالا ثبت نام کنید
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-duration="5000">
+                            <div class="video-full-container video-full-container-slider mb-5 px-0">
+                                <video class="slider-video"
+                                    poster="/asset/img/sliders/naruto_akatsuki-wallpaper-1920x1080.jpg" preload="none">
+                                    <source src="/asset/img/sliders/fazel.mp4" type="video/mp4">
+                                    مرورگر شما از تگ ویدیو پشتیبانی نمی‌کند.
+                                </video>
+
+                                <div class="video-overlay"></div>
+
+                                <div class="play-pause-btn d-flex">
+                                    <i class="bi bi-play-fill"></i>
+                                </div>
+                            </div>
+                            <div class="slider-box-container">
+                                <div class="slider-text-box">
+                                    <div class="slider-text-box-item">
+                                        <h3>عنوان اصلی اسلایدر دوم</h3>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است.</p>
+                                        <div class="d-flex justify-content-end align-items-center gap-4">
+                                            <button class="btn btn-more-info px-4 py-2">اطلاعات بیشتر</button>
+                                            <button class="btn btn-accent px-4 py-2">
+                                                <i class="bi bi-arrow-left ms-2"></i>
+                                                همین حالا ثبت نام کنید
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Vertical Pagination - اضافه کردن این بخش -->
+                    <div class="vertical-pagination position-absolute d-flex flex-column gap-2">
+                        <button class="pagination-item active" data-index="1">
+                            <div class="pagination-inner"></div>
+                        </button>
+                        <button class="pagination-item" data-index="2">
+                            <div class="pagination-inner"></div>
+                        </button>
+                        <button class="pagination-item" data-index="3">
+                            <div class="pagination-inner"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slider end -->
+        <!-- benefits start -->
+        <section class="benefits">
+            <div class="container">
+                <div class="benefit-title text-center mb-5">
+                    <h3>چرا <span class="benefit-title-name text-primary">دارالفنون فاضل</span> را انتخاب نمایم؟</h3>
+                    <p>
+                        آينده ى شغلى شما بستگی به یادگیری
+                        هارت هایی دارد كه امروز از كنارشان به سادگی عبور نمى‌کنید.
+                    </p>
+                </div>
+                <div class="nav-align-left row g-0 d-flex">
+                    <ul class="col-3 p-0 nav nav-pills border-end flex-grow-0 flex-column gap-2" role="tablist">
+                        <li class="nav-item">
+                            <a type="button" class="nav-link active" role="tab" data-bs-toggle="tab"
+                                data-bs-target="#navs-pills-left-home" aria-controls="navs-pills-left-home"
+                                aria-selected="true">
+                                ضمانت بازگشت وجه
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a type="button" class="nav-link" role="tab" data-bs-toggle="tab"
+                                data-bs-target="#navs-pills-left-profile" aria-controls="navs-pills-left-profile"
+                                aria-selected="false">
+                                آموزش مهارت محور
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a type="button" class="nav-link" role="tab" data-bs-toggle="tab"
+                                data-bs-target="#navs-pills-left-messages" aria-controls="navs-pills-left-messages"
+                                aria-selected="false">
+                                رفع اشکال و پشتیبانی فنی
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#test"
+                                aria-controls="test" aria-selected="false">
+                                معرفی برترین ها به بازار کار
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#test2"
+                                aria-controls="test2" aria-selected="false">
+                                ارزیابی و صدور گواهی بین المللی
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="col tab-content shadow-none ps-4">
+                        <div class="tab-pane fade show active" id="navs-pills-left-home" role="tabpanel">
+                            <h5 class="mb-3">رفع اشکال و پشتیبانی فنی</h5>
+                            <div class="d-flex justify-content-between align-items-center gap-5">
+                                <p class="mb-0 text-justify">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است. چاپگرها و متون بلکه روزنامه و
+                                </p>
+                                <img src="asset/img/school-material.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="navs-pills-left-profile" role="tabpanel">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                            </p>
+                            <p class="mb-0">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                گرافیک است. چاپگرها و متون بلکه روزنامه و
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="navs-pills-left-messages" role="tabpanel">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                            </p>
+                            <p class="mb-0">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="test" role="tabpanel">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                            </p>
+                            <p class="mb-0">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="test2" role="tabpanel">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                            </p>
+                            <p class="mb-0">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- benefits end -->
     </main>
 
     <!-- scripts -->
@@ -326,6 +542,10 @@
     <script src="https://lib.arvancloud.ir/font-awesome/6.3.0/js/all.min.js"></script>
     <script src="asset/js/main-menu.js"></script>
     <script src="asset/js/bookmark.js"></script>
+    <!-- tiny-slider -->
+    <script src="asset/js/tiny-slider.js"></script>
+    <!-- slider -->
+    <script src="asset/js/slider.js"></script>
 </body>
 
 </html>

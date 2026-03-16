@@ -94,8 +94,8 @@
     --secondary-light: #334155;
 
     /* Accent (CTA) */
-    --accent: #ffb703;
-    --accent-hover: #f59e0b;
+    --accent: #ffca00;
+    --accent-hover: #ffcc00;
 
     /* Backgrounds */
     --bg-main: #f8f9fa;
@@ -120,7 +120,7 @@
 
 body {
     font-family: "IRANSansX";
-    background-color: #ccc;
+    background-color: var(--bg-main);
     min-height: 200vh;
 }
 
@@ -138,8 +138,17 @@ p {
     line-height: 1.8;
 }
 
+.text-justify{
+    text-align: justify !important;
+}
 .text-muted {
     color: var(--text-muted) !important;
+}
+.text-primary {
+    color: var(--primary) !important;
+}
+.text-accent {
+    color: var(--accent) !important;
 }
 
 /* over write bootstrap css */
@@ -152,6 +161,18 @@ p {
 .btn-primary:focus {
     background-color: var(--primary-hover);
     border-color: var(--primary-hover);
+}
+.btn-more-info {
+    background-color: #ffcc0072;
+    border: 1px dashed var(--accent);
+    color: #fff;
+}
+
+.btn-more-info:hover,
+.btn-more-info:focus {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #000000;
 }
 
 .btn-outline-primary {
@@ -167,7 +188,7 @@ p {
 .btn-accent {
     background-color: var(--accent);
     border-color: var(--accent);
-    color: #000;
+    color: #fff;
     font-weight: 600;
 }
 
