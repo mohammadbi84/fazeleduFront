@@ -68,7 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   videoContainers.forEach((container) => {
     const video = container.querySelector(".slider-video");
-    const playBtn = container.querySelector(".play-pause-btn");
+    const playBtn = container.querySelector(".play-btn");
+    const pauseBtn = container.querySelector(".pause-btn");
     const icon = playBtn.querySelector("i");
 
     function toggleVideo() {
@@ -81,9 +82,11 @@ document.addEventListener("DOMContentLoaded", function () {
         stopAutoSlide();
         video.play();
         playBtn.classList.remove("d-flex");
-        playBtn.classList.add("pause");
-        icon.classList.remove("bi-play-fill");
-        icon.classList.add("bi-pause-fill");
+        playBtn.classList.add("d-none");
+
+        // pauseBtn.classList.add("d-flex");
+        // pauseBtn.classList.remove("d-none");
+
         container.classList.add("playing");
         activeVideo = video;
 
@@ -95,10 +98,13 @@ document.addEventListener("DOMContentLoaded", function () {
           .classList.add("d-none");
       } else {
         video.pause();
-        icon.classList.remove("bi-pause-fill");
-        icon.classList.add("bi-play-fill");
+
         playBtn.classList.add("d-flex");
-        playBtn.classList.remove("pause");
+        playBtn.classList.remove("d-none");
+
+        pauseBtn.classList.remove("d-flex");
+        pauseBtn.classList.add("d-none");
+
         container.classList.remove("playing");
         activeVideo = null;
 
@@ -117,6 +123,10 @@ document.addEventListener("DOMContentLoaded", function () {
       e.stopPropagation();
       toggleVideo();
     });
+    pauseBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggleVideo();
+    });
     video.addEventListener("click", (e) => {
       e.stopPropagation();
       toggleVideo();
@@ -130,8 +140,12 @@ document.addEventListener("DOMContentLoaded", function () {
       icon.classList.remove("bi-pause-fill");
       icon.classList.add("bi-play-fill");
       container.classList.remove("playing");
+
       playBtn.classList.add("d-flex");
-      playBtn.classList.remove("pause");
+      playBtn.classList.remove("d-none");
+
+      pauseBtn.classList.remove("d-flex");
+      pauseBtn.classList.add("d-none");
 
       activeVideo = null;
       const info = slider.getInfo();

@@ -227,7 +227,7 @@
     background-color: #606060;
 }
 
-.splide:not(.is-overflow) .splide__arrows {
+#stories-slider .splide:not(.is-overflow) .splide__arrows {
     display: none;
 }
 

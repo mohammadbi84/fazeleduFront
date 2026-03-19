@@ -1,0 +1,41 @@
+.newsletter .main {
+    background: linear-gradient(270deg, #3376C4 0%, #2AC3EF 100%);
+    border-radius: 12px;
+    min-height: 80px;
+    align-items: center
+}
+
+.newsletter button {
+    padding: 20px;
+}
+
+.newsletter input {
+    background: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+#mobile-for-newsletter::placeholder {
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+#mobile-for-newsletter ::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: white;
+}
+
+.newsletter img {
+    height: 160px;
+    margin-top: -130px;
+    position: relative;
+    left: 30px;
+    transform: scale(1.2);
+}

@@ -8,13 +8,13 @@
     justify-content: center;
 }
 
-.video-full-container:hover .play-pause-btn {
+.video-full-container.playing:hover .play-pause-btn {
     display: flex !important;
 }
 
-.video-overlay:hover .play-pause-btn {
+/* .video-overlay:hover .play-pause-btn {
     display: flex !important;
-}
+} */
 
 #fullscreen-video {
     position: absolute;
@@ -61,8 +61,8 @@
 }
 
 .play-pause-btn {
-    display: none;
-    position: absolute;
+    /* display: none; */
+    /* position: absolute; */
     width: 50px;
     height: 50px;
     border-radius: 8px;
@@ -76,11 +76,13 @@
     animation: pulse 2s infinite;
     transition: all 0.3s ease;
     top: 65%;
-    transform: translateY(-58%);
+    /* transform: translateY(-58%); */
     left: 21%;
     z-index: 50;
 }
 .play-pause-btn.pause{
+    display: flex;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);

@@ -1,0 +1,379 @@
+.card-css-o {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 5px 14px rgba(131, 131, 131, 0.458);
+    /* width: 620px; */
+    /* padding: 40px 180px 80px 40px; */
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 40px; */
+    overflow: visible;
+    align-items: center;
+}
+
+.slider-container-o {
+    width: 100%;
+    height: 230px;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
+
+.slider-container-o::-webkit-scrollbar {
+    display: none;
+}
+
+.slides-o {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.slide-o {
+    scroll-snap-align: start;
+    flex: 0 0 230px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 8px;
+}
+
+.date-o {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.title-o {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.description-o {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    overflow: hidden;
+    font-weight: 500;
+    display: -webkit-box !important;
+    overflow: hidden !important;
+    line-clamp: 3;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    text-align: center;
+}
+
+.audio-wrapper-o {
+    width: 100%;
+    background: #EFEFEF;
+    padding: 4px 10px;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); */
+    direction: rtl;
+    box-sizing: border-box;
+}
+
+.custom-player-o {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.play-btn-o {
+    border: none;
+    font-size: 24px;
+    padding: 0;
+    color: #9b9b9b;
+}
+
+.play-btn-o i {
+    position: relative;
+    top: 3px;
+}
+
+.seek-bar-o {
+    flex-grow: 1;
+    height: 4px;
+    border-radius: 2px;
+    cursor: pointer;
+    accent-color: var(--primary);
+    min-width: 100px;
+    direction: ltr;
+    background: #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+
+/* استایل برای مرورگرهای WebKit (کروم، سافاری، اج، فایرفاکس جدید) */
+input[type=range].seek-bar-o::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 10px;
+    /* ارتفاع دایره */
+    width: 10px;
+    /* عرض دایره */
+    border-radius: 50%;
+    /* گرد کردن دایره */
+    background: var(--primary);
+    /* رنگ دایره (غربیلک) */
+    cursor: pointer;
+    margin-top: -3px;
+    /* تنظیم موقعیت عمودی دایره روی خط */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* سایه دور دایره */
+}
+
+/* استایل برای خط (Track) در مرورگرهای WebKit */
+input[type=range].seek-bar-o::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: transparent;
+    /* اینجا را شفاف می‌کنیم تا رنگ اینپوت دیده شود */
+    border-radius: 3px;
+}
+
+/* استایل برای مرورگر فایرفاکس */
+input[type=range].seek-bar-o::-moz-range-thumb {
+    height: 10px;
+    width: 10px;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary);
+    /* رنگ دایره */
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* استایل برای خط (Track) در مرورگر فایرفاکس */
+input[type=range].seek-bar-o::-moz-range-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: transparent;
+    /* رنگ پس‌زمینه خط */
+    border-radius: 2px;
+}
+
+input[type="range" i] {
+    color: #fff !important;
+}
+
+
+.time-o {
+    font-size: 12px;
+    color: var(--primary);
+    white-space: nowrap;
+    min-width: 10px;
+}
+
+.duration-o {
+    font-size: 12px;
+    color: var(--primary);
+    white-space: nowrap;
+    min-width: 10px;
+}
+
+.volume-o {
+    width: 60px;
+    height: 4px;
+    cursor: pointer;
+    accent-color: var(--primary);
+    direction: ltr;
+    background: var(--primary);
+    appearance: none;
+    -webkit-appearance: none;
+
+}
+
+/* استایل برای مرورگرهای WebKit (کروم، سافاری، اج، فایرفاکس جدید) */
+input[type=range].volume-o::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 10px;
+    /* ارتفاع دایره */
+    width: 10px;
+    /* عرض دایره */
+    border-radius: 50%;
+    /* گرد کردن دایره */
+    background: var(--primary);
+    /* رنگ دایره (غربیلک) */
+    cursor: pointer;
+    margin-top: -3px;
+    /* تنظیم موقعیت عمودی دایره روی خط */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* سایه دور دایره */
+}
+
+/* استایل برای خط (Track) در مرورگرهای WebKit */
+input[type=range].volume-o::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: transparent;
+    /* اینجا را شفاف می‌کنیم تا رنگ اینپوت دیده شود */
+    border-radius: 3px;
+}
+
+/* استایل برای مرورگر فایرفاکس */
+input[type=range].volume-o::-moz-range-thumb {
+    height: 10px;
+    width: 10px;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary);
+    /* رنگ دایره */
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* استایل برای خط (Track) در مرورگر فایرفاکس */
+input[type=range].volume-o::-moz-range-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: transparent;
+    /* رنگ پس‌زمینه خط */
+    border-radius: 2px;
+}
+
+.volume-icon-o {
+    font-size: 16px;
+    color: var(--primary);
+}
+
+.volume-icon-o i {
+    position: relative;
+    top: 2px;
+}
+
+.image-box-o {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 16px rgb(173 173 173 / 78%);
+    /* top: 50%; */
+    right: -65px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-box-o img,
+.image-box-o video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slider-controls-o {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-54%);
+    gap: 15px;
+    z-index: 0;
+    max-height: 70%;
+    overflow-y: scroll;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 20px;
+    /* padding: 10px 0; */
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+.slider-controls-o::-webkit-scrollbar {
+    background-color: #ffffff;
+    width: 3px;
+    /* padding-right: 20px; */
+}
+
+.slider-controls-o::-webkit-scrollbar-thumb {
+    background-color: #bfbfbf;
+    border-radius: 10px;
+    width: 6px;
+}
+
+
+.control-btn-o {
+    width: 7px !important;
+    height: 7px;
+    /* margin-left: 10px; */
+    border-radius: 16px;
+    background: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+    border: none;
+    padding: 0;
+    display: block;
+}
+
+.control-btn-o.active {
+    background-color: var(--primary);
+    height: 30px;
+}
+
+@media (max-width: 700px) {
+    .card-css-o {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 15px 30px 15px;
+        box-sizing: border-box;
+        min-height: auto;
+        overflow: visible;
+    }
+
+    .image-box-o {
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: none;
+        width: 100%;
+        height: 140px;
+        margin-top: 20px;
+        border-radius: 15px;
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .slider-container-o {
+        height: auto;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    .slider-controls-o {
+        top: auto;
+        left: auto;
+        bottom: 10px;
+        right: 15px;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 700px) {
+    .card-css-o {
+        flex-direction: column;
+    }
+
+    .image-box-o {
+        order: -1;
+        margin-bottom: 20px;
+    }
+}

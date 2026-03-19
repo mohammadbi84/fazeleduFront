@@ -63,9 +63,7 @@ function initMainMenu() {
         categoriesMenu.style.left = "0";
         categoriesMenu.style.right = "0";
 
-        if (Bookmark && Bookmark.classList.contains("expanded")) {
-          mainMenu.classList.remove("smallBookmark");
-        }
+        mainMenu.classList.remove("smallBookmark");
         mainMenu.classList.add("rounded-3");
       }
     }

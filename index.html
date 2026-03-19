@@ -25,6 +25,30 @@
     <!-- benefits -->
     <link rel="stylesheet" href="asset/css/benefits.css">
 
+    <!-- starting-courses -->
+    <link rel="stylesheet" href="asset/css/starting-courses.css">
+
+    <!-- main-comments -->
+    <link rel="stylesheet" href="asset/css/main-comments.css">
+
+    <!-- offers -->
+    <link rel="stylesheet" href="asset/css/offers.css">
+
+    <!-- newsletter -->
+    <link rel="stylesheet" href="asset/css/newsletter.css">
+
+    <!-- amasings -->
+    <link rel="stylesheet" href="asset/css/amasings.css">
+
+    <!-- media -->
+    <link rel="stylesheet" href="asset/css/main-media.css">
+
+    <!-- others -->
+    <link rel="stylesheet" href="asset/css/others.css">
+
+    <!-- team -->
+    <link rel="stylesheet" href="asset/css/team.css">
+
     <link rel="stylesheet" href="https://lib.arvancloud.ir/bootstrap-icons/1.9.1/font/bootstrap-icons.css">
 
 </head>
@@ -329,7 +353,7 @@
                 <div class="top-slider-container flex-grow-1 position-relative">
                     <div class="top-slider">
                         <div class="item position-relative" data-duration="5000">
-                            <img src="/asset/img/sliders/island_pink_supermoon-wallpaper-1920x1080.jpg"
+                            <img src="asset/img/sliders/island_pink_supermoon-wallpaper-1920x1080.jpg"
                                 class="img-fluid w-100 h-100" style="object-fit: cover;" alt="تست">
 
                             <div class="slider-box-container">
@@ -350,7 +374,7 @@
                             </div>
                         </div>
                         <div class="item position-relative" data-duration="5000">
-                            <img src="/asset/img/sliders/oriental_fantasy_art-wallpaper-1920x1080.jpg"
+                            <img src="asset/img/sliders/oriental_fantasy_art-wallpaper-1920x1080.jpg"
                                 class="img-fluid w-100 h-100" style="object-fit: cover;" alt="تست">
 
                             <div class="slider-box-container">
@@ -373,29 +397,32 @@
                         <div class="item" data-duration="5000">
                             <div class="video-full-container video-full-container-slider mb-5 px-0">
                                 <video class="slider-video"
-                                    poster="/asset/img/sliders/naruto_akatsuki-wallpaper-1920x1080.jpg" preload="none">
-                                    <source src="/asset/img/sliders/fazel.mp4" type="video/mp4">
+                                    poster="asset/img/sliders/naruto_akatsuki-wallpaper-1920x1080.jpg" preload="none">
+                                    <source src="asset/img/sliders/fazel.mp4" type="video/mp4">
                                     مرورگر شما از تگ ویدیو پشتیبانی نمی‌کند.
                                 </video>
 
                                 <div class="video-overlay"></div>
-
-                                <div class="play-pause-btn d-flex">
-                                    <i class="bi bi-play-fill"></i>
+                                <div class="play-pause-btn d-none pause-btn">
+                                    <i class="bi bi-pause-fill"></i>
                                 </div>
-                            </div>
-                            <div class="slider-box-container">
-                                <div class="slider-text-box">
-                                    <div class="slider-text-box-item">
-                                        <h3>عنوان اصلی اسلایدر دوم</h3>
-                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                            طراحان گرافیک است.</p>
-                                        <div class="d-flex justify-content-end align-items-center gap-4">
-                                            <button class="btn btn-more-info px-4 py-2">اطلاعات بیشتر</button>
-                                            <button class="btn btn-accent px-4 py-2">
-                                                <i class="bi bi-arrow-left ms-2"></i>
-                                                همین حالا ثبت نام کنید
-                                            </button>
+
+                                <div class="slider-box-container">
+                                    <div class="slider-text-box">
+                                        <div class="slider-text-box-item">
+                                            <h3>عنوان اصلی اسلایدر دوم</h3>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                                طراحان گرافیک است.</p>
+                                            <div class="d-flex justify-content-end align-items-center gap-4">
+                                                <div class="play-pause-btn d-flex play-btn">
+                                                    <i class="bi bi-play-fill"></i>
+                                                </div>
+                                                <button class="btn btn-more-info px-4 py-2">اطلاعات بیشتر</button>
+                                                <button class="btn btn-accent px-4 py-2">
+                                                    <i class="bi bi-arrow-left ms-2"></i>
+                                                    همین حالا ثبت نام کنید
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -419,7 +446,7 @@
         </section>
         <!-- slider end -->
         <!-- benefits start -->
-        <section class="benefits">
+        <section class="benefits mb-10">
             <div class="container">
                 <div class="benefit-title text-center mb-5">
                     <h3>چرا <span class="benefit-title-name text-primary">دارالفنون فاضل</span> را انتخاب نمایم؟</h3>
@@ -429,7 +456,7 @@
                     </p>
                 </div>
                 <div class="nav-align-left row g-0 d-flex">
-                    <ul class="col-3 p-0 nav nav-pills border-end flex-grow-0 flex-column gap-2" role="tablist">
+                    <ul class="col p-0 nav nav-pills border-end flex-grow-0 flex-column" role="tablist">
                         <li class="nav-item">
                             <a type="button" class="nav-link active" role="tab" data-bs-toggle="tab"
                                 data-bs-target="#navs-pills-left-home" aria-controls="navs-pills-left-home"
@@ -468,7 +495,7 @@
                         <div class="tab-pane fade show active" id="navs-pills-left-home" role="tabpanel">
                             <h5 class="mb-3">رفع اشکال و پشتیبانی فنی</h5>
                             <div class="d-flex justify-content-between align-items-center gap-5">
-                                <p class="mb-0 text-justify">
+                                <p class="mb-0 text-justify line-height-5">
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                                     گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
                                     برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
@@ -527,6 +554,1401 @@
             </div>
         </section>
         <!-- benefits end -->
+        <!-- starting courses start -->
+        <section class="starting-courses mb-10">
+            <div class="container">
+                <div class="starting-courses-title d-flex justify-content-between align-items-center">
+                    <div class="starting-courses-title">
+                        <h3><span class="text-primary">دوره های</span> درحال ثبت نام</h3>
+                    </div>
+                    <div
+                        class="starting-courses-timer-and-arrow d-flex justify-content-between align-items-center gap-3">
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <div class="starting-courses-arrow-box starting-courses-arrow-right">
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                            <div class="starting-courses-arrow-box starting-courses-arrow-left">
+                                <i class="bi bi-arrow-left"></i>
+                            </div>
+                        </div>
+                        <div class="starting-courses-timer row row-cols-4 g-0">
+                            <div class="timer-shadow-box"></div>
+                            <div class="timer-box p-0 px-1 d-flex flex-column align-items-center">
+                                <span class="timer-counter">12</span>
+                                <small class="timer-label">ثانیه</small>
+                            </div>
+                            <div class="timer-box p-0 px-1 d-flex flex-column align-items-center">
+                                <span class="timer-counter">12</span>
+                                <small class="timer-label">دقیقه</small>
+                            </div>
+                            <div class="timer-box p-0 px-1 d-flex flex-column align-items-center">
+                                <span class="timer-counter">12</span>
+                                <small class="timer-label">ساعت</small>
+                            </div>
+                            <div class="timer-box p-0 px-1 d-flex flex-column align-items-center">
+                                <span class="timer-counter">12</span>
+                                <small class="timer-label">روز</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="starting-courses-main py-3">
+                    <div id="starting-courses-slider" class="splide" style="padding: 0 5px !important;">
+                        <div class="splide__track fix-shadow-margin py-1">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="starting-courses-card">
+                                        <a href="#">
+                                            <div class="starting-courses-card-img-box">
+                                                <img src="asset/img/3.png" alt="">
+                                            </div>
+                                        </a>
+                                        <h4 class="starting-courses-card-title oneline-show">عنوان کارت اول</h4>
+                                        <div
+                                            class="starting-courses-card-details d-flex justify-content-between align-items-center ">
+                                            <div class="starting-courses-card-details-item">
+                                                <p>دسته بندی</p>
+                                                <span>برنامه نویسی</span>
+                                            </div>
+                                            <div class="starting-courses-card-details-border"></div>
+                                            <div class="starting-courses-card-details-item">
+                                                <p>نوع دوره</p>
+                                                <span>حضوری</span>
+                                            </div>
+                                            <div class="starting-courses-card-details-border"></div>
+                                            <div class="starting-courses-card-details-item">
+                                                <p>تعداد جلسات</p>
+                                                <span>20 جلسه</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center starting-courses-card-footer">
+                                            <a href="#" class="starting-courses-card-footer-link">مشاهده بیشتر</a>
+                                            <div
+                                                class="starting-courses-card-price-box d-flex flex-column align-items-end">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <p class="m-0 accordion starting-courses-card-price-off">5,000,000
+                                                    </p>
+                                                    <small class="starting-courses-card-price-off-percent">10 %</small>
+                                                </div>
+                                                <p class="m-0 starting-courses-card-price">4,500,000 تومان</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="starting-courses-card">
+                                        <a href="#">
+                                            <div class="starting-courses-card-img-box">
+                                                <img src="asset/img/3.png" alt="">
+                                            </div>
+                                        </a>
+                                        <h4 class="starting-courses-card-title oneline-show">عنوان کارت اول</h4>
+                                        <div
+                                            class="starting-courses-card-details d-flex justify-content-between align-items-center ">
+                                            <div class="starting-courses-card-details-item">
+                                                <p>دسته بندی</p>
+                                                <span>برنامه نویسی</span>
+                                            </div>
+                                            <div class="starting-courses-card-details-border"></div>
+                                            <div class="starting-courses-card-details-item">
+                                                <p>نوع دوره</p>
+                                                <span>حضوری</span>
+                                            </div>
+                                            <div class="starting-courses-card-details-border"></div>
+                                            <div class="starting-courses-card-details-item">
+                                                <p>تعداد جلسات</p>
+                                                <span>20 جلسه</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center starting-courses-card-footer">
+                                            <a href="#" class="starting-courses-card-footer-link">مشاهده بیشتر</a>
+                                            <div
+                                                class="starting-courses-card-price-box d-flex flex-column align-items-end">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <p class="m-0 accordion starting-courses-card-price-off">5,000,000
+                                                    </p>
+                                                    <small class="starting-courses-card-price-off-percent">10 %</small>
+                                                </div>
+                                                <p class="m-0 starting-courses-card-price">4,500,000 تومان</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="starting-courses-card">
+                                        <a href="#">
+                                            <div class="starting-courses-card-img-box">
+                                                <img src="asset/img/3.png" alt="">
+                                            </div>
+                                        </a>
+                                        <h4 class="starting-courses-card-title oneline-show">عنوان کارت اول</h4>
+                                        <div
+                                            class="starting-courses-card-details d-flex justify-content-between align-items-center ">
+                                            <div class="starting-courses-card-details-item">
+                                                <p>دسته بندی</p>
+                                                <span>برنامه نویسی</span>
+                                            </div>
+                                            <div class="starting-courses-card-details-border"></div>
+                                            <div class="starting-courses-card-details-item">
+                                                <p>نوع دوره</p>
+                                                <span>حضوری</span>
+                                            </div>
+                                            <div class="starting-courses-card-details-border"></div>
+                                            <div class="starting-courses-card-details-item">
+                                                <p>تعداد جلسات</p>
+                                                <span>20 جلسه</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center starting-courses-card-footer">
+                                            <a href="#" class="starting-courses-card-footer-link">مشاهده بیشتر</a>
+                                            <div
+                                                class="starting-courses-card-price-box d-flex flex-column align-items-end">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <p class="m-0 accordion starting-courses-card-price-off">5,000,000
+                                                    </p>
+                                                    <small class="starting-courses-card-price-off-percent">10 %</small>
+                                                </div>
+                                                <p class="m-0 starting-courses-card-price">4,500,000 تومان</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="starting-courses-card">
+                                        <a href="#">
+                                            <div class="starting-courses-card-img-box">
+                                                <img src="asset/img/3.png" alt="">
+                                            </div>
+                                        </a>
+                                        <h4 class="starting-courses-card-title oneline-show">عنوان کارت اول</h4>
+                                        <div
+                                            class="starting-courses-card-details d-flex justify-content-between align-items-center ">
+                                            <div class="starting-courses-card-details-item">
+                                                <p>دسته بندی</p>
+                                                <span>برنامه نویسی</span>
+                                            </div>
+                                            <div class="starting-courses-card-details-border"></div>
+                                            <div class="starting-courses-card-details-item">
+                                                <p>نوع دوره</p>
+                                                <span>حضوری</span>
+                                            </div>
+                                            <div class="starting-courses-card-details-border"></div>
+                                            <div class="starting-courses-card-details-item">
+                                                <p>تعداد جلسات</p>
+                                                <span>20 جلسه</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center starting-courses-card-footer">
+                                            <a href="#" class="starting-courses-card-footer-link">مشاهده بیشتر</a>
+                                            <div
+                                                class="starting-courses-card-price-box d-flex flex-column align-items-end">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <p class="m-0 accordion starting-courses-card-price-off">5,000,000
+                                                    </p>
+                                                    <small class="starting-courses-card-price-off-percent">10 %</small>
+                                                </div>
+                                                <p class="m-0 starting-courses-card-price">4,500,000 تومان</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="starting-courses-card">
+                                        <a href="#">
+                                            <div class="starting-courses-card-img-box">
+                                                <img src="asset/img/3.png" alt="">
+                                            </div>
+                                        </a>
+                                        <h4 class="starting-courses-card-title oneline-show">عنوان کارت اول</h4>
+                                        <div
+                                            class="starting-courses-card-details d-flex justify-content-between align-items-center ">
+                                            <div class="starting-courses-card-details-item">
+                                                <p>دسته بندی</p>
+                                                <span>برنامه نویسی</span>
+                                            </div>
+                                            <div class="starting-courses-card-details-border"></div>
+                                            <div class="starting-courses-card-details-item">
+                                                <p>نوع دوره</p>
+                                                <span>حضوری</span>
+                                            </div>
+                                            <div class="starting-courses-card-details-border"></div>
+                                            <div class="starting-courses-card-details-item">
+                                                <p>تعداد جلسات</p>
+                                                <span>20 جلسه</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center starting-courses-card-footer">
+                                            <a href="#" class="starting-courses-card-footer-link">مشاهده بیشتر</a>
+                                            <div
+                                                class="starting-courses-card-price-box d-flex flex-column align-items-end">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <p class="m-0 accordion starting-courses-card-price-off">5,000,000
+                                                    </p>
+                                                    <small class="starting-courses-card-price-off-percent">10 %</small>
+                                                </div>
+                                                <p class="m-0 starting-courses-card-price">4,500,000 تومان</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- starting courses end -->
+        <!-- comments start -->
+        <section class="main-comments mb-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 px-4 d-flex flex-column justify-content-center">
+                        <h2 class="comment-title text-center">
+                            مزایای <span class="text-primary">گواهینامه های</span> اعطایی
+                        </h2>
+                        <p class="commetn-text">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها
+                            و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                            نیاز
+                            و
+                            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="testimonial-slider">
+                            <div class="swiper main-comments-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card main-comments-card">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <div class="user">
+                                                    <div class="counter">1</div>
+                                                    <div>
+                                                        <h4>علی رسولی</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                                از
+                                                طراحان گرافیک است.
+                                                چاپگرها
+                                                و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                                                فعلی
+                                                تکنولوژی مورد نیاز
+                                                و
+                                                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card main-comments-card">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <div class="user">
+                                                    <div class="counter">2</div>
+                                                    <div>
+                                                        <h4>علی رسولی</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                                از
+                                                طراحان گرافیک است.
+                                                چاپگرها
+                                                و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                                                فعلی
+                                                تکنولوژی مورد نیاز
+                                                و
+                                                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card main-comments-card">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <div class="user">
+                                                    <div class="counter">3</div>
+                                                    <div>
+                                                        <h4>علی رسولی</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                                از
+                                                طراحان گرافیک است.
+                                                چاپگرها
+                                                و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                                                فعلی
+                                                تکنولوژی مورد نیاز
+                                                و
+                                                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- دکمه‌ها -->
+                                <div class="main-comments-arrow main-comments-arrow-right">
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                                <div class="main-comments-arrow main-comments-arrow-left">
+                                    <i class="bi bi-arrow-left"></i>
+                                </div>
+
+                                <!-- دات‌های زیر -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- comments end -->
+        <!-- amasings start -->
+        <section class="amasings mb-10">
+            <div class="container">
+                <div class="amasings-title d-flex justify-content-between align-items-center">
+                    <div class="amasings-title">
+                        <h3>پیشنهاد <span class="text-primary">ویژه</span></h3>
+                    </div>
+                    <div class="amasings-timer-and-arrow d-flex justify-content-between align-items-center gap-3">
+                        <div class="amasings-timer">
+                            <div class="timer-shadow-box"></div>
+                            <a href="#" class="btn w-100">مشاهده بیشتر <i class="bi bi-arrow-left ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="amasings-main">
+                    <div id="amasings-slider" class="splide">
+                        <div class="splide__track fix-shadow-margin">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="amasings-card">
+                                        <div class="row g-0">
+                                            <div class="col-md-5">
+                                                <div class="image-box">
+                                                    <img src="asset/img/4.png" alt="" class="shadow">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 amasings-card-body ps-4">
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <div class="">
+                                                        <h4 class="oneline-show">عنوان اصلی دوره آموزشی</h4>
+                                                        <p class="m-0">دسته بندی</p>
+                                                    </div>
+                                                    <div class="amasings-card-timer">
+                                                        <div
+                                                            class="timer-box p-0 px-1 d-flex flex-column align-items-center">
+                                                            <span class="timer-counter">12</span>
+                                                            <small class="timer-label">ثانیه</small>
+                                                        </div>
+                                                        <div
+                                                            class="timer-box p-0 px-1 d-flex flex-column align-items-center">
+                                                            <span class="timer-counter">12</span>
+                                                            <small class="timer-label">دقیقه</small>
+                                                        </div>
+                                                        <div
+                                                            class="timer-box p-0 px-1 d-flex flex-column align-items-center">
+                                                            <span class="timer-counter">12</span>
+                                                            <small class="timer-label">ساعت</small>
+                                                        </div>
+                                                        <div
+                                                            class="timer-box p-0 px-1 d-flex flex-column align-items-center">
+                                                            <span class="timer-counter">12</span>
+                                                            <small class="timer-label">روز</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="amasings-card-text">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                                                        debitis nobis sapiente quos nemo ex dolorum tempora quisquam
+                                                        eaque illum sunt, ad dolor. Porro illum earum eos, eligendi
+                                                        recusandae nulla!</p>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center amasings-footer">
+                                                    <a href="#" class="amasings-footer-link">مشاهده
+                                                        بیشتر
+                                                    </a>
+                                                    <div class="amasings-details-border"></div>
+                                                    <div
+                                                        class="amasings-details d-flex justify-content-center align-items-center flex-grow-1">
+                                                        <div class="amasings-details-item">
+                                                            <span>450</span>
+                                                            <p>فروش</p>
+                                                        </div>
+                                                        <div class="amasings-details-item">
+                                                            <span>50 %</span>
+                                                            <p>رضایت</p>
+                                                        </div>
+                                                        <div class="amasings-details-item">
+                                                            <span>A+</span>
+                                                            <p>پشتیبانی</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="amasings-details-border"></div>
+                                                    <div class="amasings-price-box d-flex flex-column align-items-end">
+                                                        <div class="d-flex align-items-center off-box">
+                                                            <p class="m-0 accordion amasings-price-off">
+                                                                5,000,000
+                                                            </p>
+                                                            <small class="amasings-price-off-percent">10 %</small>
+                                                        </div>
+                                                        <p class="m-0 amasings-price">4,500,000 تومان</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper amasings-thumb-slider bg-white p-3 rounded-3 rounded-top-0">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="amasing-thumb-card d-flex align-items-center border rounded-3 gap-2 pe-2">
+                                    <img src="asset/img/3.png" alt="" width="90" height="65"
+                                        class="object-fit-cover rounded-3 rounded-end-0">
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <p class="oneline-show">عنوان دوره1</p>
+                                        <div class="align-self-end">
+                                            <small class="text-muted">تخفیف</small>
+                                            <small class="amasings-price-off-percent align-self-end">10 %</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="amasing-thumb-card d-flex align-items-center border rounded-3 gap-2 pe-2">
+                                    <img src="asset/img/3.png" alt="" width="90" height="65"
+                                        class="object-fit-cover rounded-3 rounded-end-0">
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <p class="oneline-show">عنوان دوره2</p>
+                                        <div class="align-self-end">
+                                            <small class="text-muted">تخفیف</small>
+                                            <small class="amasings-price-off-percent align-self-end">1,500,000
+                                                تومان</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="amasing-thumb-card d-flex align-items-center border rounded-3 gap-2 pe-2">
+                                    <img src="asset/img/3.png" alt="" width="90" height="65"
+                                        class="object-fit-cover rounded-3 rounded-end-0">
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <p class="oneline-show">3عنوان دوره</p>
+                                        <div class="align-self-end">
+                                            <small class="text-muted">تخفیف</small>
+                                            <small class="amasings-price-off-percent align-self-end">10 %</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="amasing-thumb-card d-flex align-items-center border rounded-3 gap-2 pe-2">
+                                    <img src="asset/img/3.png" alt="" width="90" height="65"
+                                        class="object-fit-cover rounded-3 rounded-end-0">
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <p class="oneline-show">عنوان دوره4</p>
+                                        <div class="align-self-end">
+                                            <small class="text-muted">تخفیف</small>
+                                            <small class="amasings-price-off-percent align-self-end">10 %</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="amasing-thumb-card d-flex align-items-center border rounded-3 gap-2 pe-2">
+                                    <img src="asset/img/3.png" alt="" width="90" height="65"
+                                        class="object-fit-cover rounded-3 rounded-end-0">
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <p class="oneline-show">عنوان دوره5</p>
+                                        <div class="align-self-end">
+                                            <small class="text-muted">تخفیف</small>
+                                            <small class="amasings-price-off-percent align-self-end">10 %</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="amasing-thumb-card d-flex align-items-center border rounded-3 gap-2 pe-2">
+                                    <img src="asset/img/3.png" alt="" width="90" height="65"
+                                        class="object-fit-cover rounded-3 rounded-end-0">
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <p class="oneline-show">عنوان دوره6</p>
+                                        <div class="align-self-end">
+                                            <small class="text-muted">تخفیف</small>
+                                            <small class="amasings-price-off-percent align-self-end">10 %</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="amasing-thumb-card d-flex align-items-center border rounded-3 gap-2 pe-2">
+                                    <img src="asset/img/3.png" alt="" width="90" height="65"
+                                        class="object-fit-cover rounded-3 rounded-end-0">
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <p class="oneline-show">عنوان دوره7</p>
+                                        <div class="align-self-end">
+                                            <small class="text-muted">تخفیف</small>
+                                            <small class="amasings-price-off-percent align-self-end">10 %</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="amasing-thumb-card d-flex align-items-center border rounded-3 gap-2 pe-2">
+                                    <img src="asset/img/3.png" alt="" width="90" height="65"
+                                        class="object-fit-cover rounded-3 rounded-end-0">
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <p class="oneline-show">عنوان دوره8</p>
+                                        <div class="align-self-end">
+                                            <small class="text-muted">تخفیف</small>
+                                            <small class="amasings-price-off-percent align-self-end">10 %</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- دکمه‌ها -->
+                        <div class="amasings-thumb-arrow amasings-thumb-arrow-right">
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <div class="amasings-thumb-arrow amasings-thumb-arrow-left">
+                            <i class="bi bi-arrow-left"></i>
+                        </div>
+
+                        <!-- دات‌های زیر -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- amasings end -->
+        <!-- newsletter start -->
+        <div class="container mb-10">
+            <div id="invite-newsletter" class="mt-5 newsletter">
+                <form action="#" method="post">
+                    <div class="row m-0 main">
+                        <div class="col-3">
+                            <p class="mb-0 text-white text-title-2 text-bold-2">خبرنامه پیامکی</p>
+                            <p class="mb-0 text-white-50 text-title-3">تاکنون 1926 نفر عضو شده اند.</p>
+                        </div>
+
+                        <div class="col-2">
+                            <button type="submit" class="btn btn-accent w-100 text-bold-2" href="#">
+                                درخواست عضویت
+                            </button>
+                        </div>
+
+                        <div class="col-5">
+                            <input type="text" name="mobile" id="mobile-for-newsletter" class="text-title-3 text-bold-2"
+                                placeholder="شماره تماس خود را وارد کنید">
+                        </div>
+
+                        <div class="col-2">
+                            <!-- empty for image place -->
+                        </div>
+                    </div>
+                </form>
+                <div class="text-end">
+                    <img src="asset/img/invite-newsletter.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- newsletter end -->
+        <!-- offers start -->
+        <section class="offers mb-10">
+            <div class="container">
+                <div class="offers-title d-flex justify-content-between align-items-center">
+                    <div class="offers-title">
+                        <h3><span class="text-primary">جدید ترین</span> دوره های آموزشی</h3>
+                    </div>
+                    <div class="offers-timer-and-arrow d-flex justify-content-between align-items-center gap-3">
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <div class="offers-arrow-box offers-slider-arrow-right">
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                            <div class="offers-arrow-box offers-slider-arrow-left">
+                                <i class="bi bi-arrow-left"></i>
+                            </div>
+                        </div>
+                        <div class="offers-timer">
+                            <div class="timer-shadow-box"></div>
+                            <a href="#" class="btn w-100">مشاهده بیشتر <i class="bi bi-arrow-left ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers-main">
+                    <div id="offers-slider" class="splide">
+                        <div class="splide__track fix-shadow-margin">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="offers-card">
+                                        <div class="row g-0">
+                                            <div class="col-md-6">
+                                                <div class="image-box">
+                                                    <img src="asset/img/4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 offers-card-body py-2 ps-4">
+                                                <div class="">
+                                                    <p class="m-0">دسته بندی</p>
+                                                    <h4 class="oneline-show">عنوان اصلی دوره آموزشی</h4>
+                                                </div>
+                                                <div class="row g-0">
+                                                    <div class="col-md-6 p-0 pe-md-1 mb-2">
+                                                        <div
+                                                            class="details-card d-flex justify-content-start align-items-center gap-3">
+                                                            <div class="icon-box">
+                                                                <i class="bi bi-translate"></i>
+                                                            </div>
+                                                            <div class="text-box">
+                                                                <p class="mb-1">مدرس</p>
+                                                                <h6 class="m-0">جادی میرمیرانی</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 p-0 ps-md-1 mb-2">
+                                                        <div
+                                                            class="details-card d-flex justify-content-start align-items-center gap-3">
+                                                            <div class="icon-box">
+                                                                <i class="bi bi-clock"></i>
+                                                            </div>
+                                                            <div class="text-box">
+                                                                <p class="mb-1">زمان دوره</p>
+                                                                <h6 class="m-0">23 ساعت</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 p-0 pe-md-1 mb-2">
+                                                        <div
+                                                            class="details-card d-flex justify-content-start align-items-center gap-3">
+                                                            <div class="icon-box">
+                                                                <i class="bi bi-translate"></i>
+                                                            </div>
+                                                            <div class="text-box">
+                                                                <p class="mb-1">مدرس</p>
+                                                                <h6 class="m-0">جادی میرمیرانی</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 p-0 ps-md-1 mb-2">
+                                                        <div
+                                                            class="details-card d-flex justify-content-start align-items-center gap-3">
+                                                            <div class="icon-box">
+                                                                <i class="bi bi-translate"></i>
+                                                            </div>
+                                                            <div class="text-box">
+                                                                <p class="mb-1">مدرس</p>
+                                                                <h6 class="m-0">جادی میرمیرانی</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-0 mt-2">
+                                                    <div
+                                                        class="col-12 p-2 px-4 footer d-flex justify-content-between align-items-center">
+                                                        <div
+                                                            class="offers-price-box d-flex flex-column align-items-start">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <p class="m-0 accordion offers-price-off">5,000,000
+                                                                </p>
+                                                                <small class="offers-price-off-percent">10 %</small>
+                                                            </div>
+                                                            <p class="m-0 offers-price">4,500,000 تومان</p>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-center gap-4">
+                                                            <div class="text-center">
+                                                                <span class="sell-count d-block">80 %</span>
+                                                                <span class="sell-text">رضایت</span>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <span class="rate-count d-block">65</span>
+                                                                <span class="rate-text">دانشجو</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="offers-card">
+                                        <div class="row g-0">
+                                            <div class="col-md-6">
+                                                <div class="image-box">
+                                                    <img src="asset/img/4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 offers-card-body py-2 ps-4">
+                                                <div class="">
+                                                    <p class="m-0">دسته بندی</p>
+                                                    <h4 class="oneline-show">عنوان اصلی دوره آموزشی</h4>
+                                                </div>
+                                                <div class="row g-0">
+                                                    <div class="col-md-6 p-0 pe-md-1 mb-2">
+                                                        <div
+                                                            class="details-card d-flex justify-content-start align-items-center gap-3">
+                                                            <div class="icon-box">
+                                                                <i class="bi bi-translate"></i>
+                                                            </div>
+                                                            <div class="text-box">
+                                                                <p class="mb-1">مدرس</p>
+                                                                <h6 class="m-0">جادی میرمیرانی</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 p-0 ps-md-1 mb-2">
+                                                        <div
+                                                            class="details-card d-flex justify-content-start align-items-center gap-3">
+                                                            <div class="icon-box">
+                                                                <i class="bi bi-clock"></i>
+                                                            </div>
+                                                            <div class="text-box">
+                                                                <p class="mb-1">زمان دوره</p>
+                                                                <h6 class="m-0">23 ساعت</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 p-0 pe-md-1 mb-2">
+                                                        <div
+                                                            class="details-card d-flex justify-content-start align-items-center gap-3">
+                                                            <div class="icon-box">
+                                                                <i class="bi bi-translate"></i>
+                                                            </div>
+                                                            <div class="text-box">
+                                                                <p class="mb-1">مدرس</p>
+                                                                <h6 class="m-0">جادی میرمیرانی</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 p-0 ps-md-1 mb-2">
+                                                        <div
+                                                            class="details-card d-flex justify-content-start align-items-center gap-3">
+                                                            <div class="icon-box">
+                                                                <i class="bi bi-translate"></i>
+                                                            </div>
+                                                            <div class="text-box">
+                                                                <p class="mb-1">مدرس</p>
+                                                                <h6 class="m-0">جادی میرمیرانی</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-0 mt-2">
+                                                    <div
+                                                        class="col-12 p-2 px-4 footer d-flex justify-content-between align-items-center">
+                                                        <div
+                                                            class="offers-price-box d-flex flex-column align-items-start">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <p class="m-0 accordion offers-price-off">5,000,000
+                                                                </p>
+                                                                <small class="offers-price-off-percent">10 %</small>
+                                                            </div>
+                                                            <p class="m-0 offers-price">4,500,000 تومان</p>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-center gap-4">
+                                                            <div class="text-center">
+                                                                <span class="sell-count d-block">80 %</span>
+                                                                <span class="sell-text">رضایت</span>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <span class="rate-count d-block">65</span>
+                                                                <span class="rate-text">دانشجو</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="offers-card">
+                                        <div class="row g-0">
+                                            <div class="col-md-6">
+                                                <div class="image-box">
+                                                    <img src="asset/img/4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 offers-card-body py-2 ps-4">
+                                                <div class="">
+                                                    <p class="m-0">دسته بندی</p>
+                                                    <h4 class="oneline-show">عنوان اصلی دوره آموزشی</h4>
+                                                </div>
+                                                <div class="row g-0">
+                                                    <div class="col-md-6 p-0 pe-md-1 mb-2">
+                                                        <div
+                                                            class="details-card d-flex justify-content-start align-items-center gap-3">
+                                                            <div class="icon-box">
+                                                                <i class="bi bi-translate"></i>
+                                                            </div>
+                                                            <div class="text-box">
+                                                                <p class="mb-1">مدرس</p>
+                                                                <h6 class="m-0">جادی میرمیرانی</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 p-0 ps-md-1 mb-2">
+                                                        <div
+                                                            class="details-card d-flex justify-content-start align-items-center gap-3">
+                                                            <div class="icon-box">
+                                                                <i class="bi bi-clock"></i>
+                                                            </div>
+                                                            <div class="text-box">
+                                                                <p class="mb-1">زمان دوره</p>
+                                                                <h6 class="m-0">23 ساعت</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 p-0 pe-md-1 mb-2">
+                                                        <div
+                                                            class="details-card d-flex justify-content-start align-items-center gap-3">
+                                                            <div class="icon-box">
+                                                                <i class="bi bi-translate"></i>
+                                                            </div>
+                                                            <div class="text-box">
+                                                                <p class="mb-1">مدرس</p>
+                                                                <h6 class="m-0">جادی میرمیرانی</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 p-0 ps-md-1 mb-2">
+                                                        <div
+                                                            class="details-card d-flex justify-content-start align-items-center gap-3">
+                                                            <div class="icon-box">
+                                                                <i class="bi bi-translate"></i>
+                                                            </div>
+                                                            <div class="text-box">
+                                                                <p class="mb-1">مدرس</p>
+                                                                <h6 class="m-0">جادی میرمیرانی</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-0 mt-2">
+                                                    <div
+                                                        class="col-12 p-2 px-4 footer d-flex justify-content-between align-items-center">
+                                                        <div
+                                                            class="offers-price-box d-flex flex-column align-items-start">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <p class="m-0 accordion offers-price-off">5,000,000
+                                                                </p>
+                                                                <small class="offers-price-off-percent">10 %</small>
+                                                            </div>
+                                                            <p class="m-0 offers-price">4,500,000 تومان</p>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-center gap-4">
+                                                            <div class="text-center">
+                                                                <span class="sell-count d-block">80 %</span>
+                                                                <span class="sell-text">رضایت</span>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <span class="rate-count d-block">65</span>
+                                                                <span class="rate-text">دانشجو</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- offers end -->
+        <!-- media-about start -->
+        <section class="media mb-10">
+            <div class="container">
+                <div class="row g-0">
+                    <!-- ستون راست (توضیحات) -->
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="">
+                            <h4 class="mb-3 main-about-title">
+                                <svg class="text-dark-550 lg:me-4 lg:flex hidden mt-2" width="37" height="34"
+                                    viewBox="0 0 37 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="24" r="10" fill="currentColor"></circle>
+                                    <circle cx="30" cy="13" r="7" fill="currentColor" fill-opacity="0.4">
+                                    </circle>
+                                    <circle cx="15" cy="4" r="4" fill="currentColor" fill-opacity="0.7">
+                                    </circle>
+                                </svg>
+                                در مورد <span class="text-primary">دارالفنون فاضل</span> چه میشنویم؟
+                            </h4>
+                            <p class="">
+                                اینها بخش خیلی کوچکی از نظراتی هستند که افراد مختلف در مورد دارالفنون فاضل دارند
+                            </p>
+                            <div class="text-end">
+                                <img src="asset/img/invite-newsletter.png" width="90" height="90">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ستون چپ (اسلایدر پادکست) -->
+                    <div class="col-md-6">
+                        <div class="row g-0 card-css-o">
+                            <div class="col-3">
+                                <!-- مربع کوچک که عکس یا ویدیو اینجا نمایش داده می‌شود -->
+                                <div class="image-box-o" aria-hidden="true">
+                                    <img id="podcast-image-o" alt="تصویر پادکست" />
+                                    <video id="podcast-video-o"
+                                        style="display:none; width:100%; height:100%; object-fit:cover; border-radius:20px;"></video>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="">
+                                    <div class="slider-container-o" id="slider-container-o">
+                                        <div class="slides-o">
+                                            <!-- اسلاید ۱: صوت با عکس -->
+                                            <div class="slide-o" data-type="audio" data-img="asset/img/2.png">
+                                                <div class="date-o" style="text-align: right;">۱۵ آذر ۱۴۰۰</div>
+                                                <div class="title-o" style="text-align: right;">آموزش تولید محتوا به
+                                                    زبان
+                                                    ساده
+                                                </div>
+                                                <div class="description-o" style="text-align: right;">
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                </div>
+                                                <audio src="asset/sounds/moein.mp3"></audio>
+                                                <div class="audio-wrapper-o">
+                                                    <div class="custom-player-o">
+                                                        <input type="range" class="volume-o" min="0" max="1" step="0.01"
+                                                            value="1" title="صدا">
+                                                        <span class="volume-icon-o"><i class="bi bi-speaker"></i></span>
+                                                        <input type="range" class="seek-bar-o" value="0" min="0"
+                                                            step="1">
+                                                        <span class="time-o">0:00</span>
+                                                        <button class="play-btn-o" title="پخش/توقف"><i
+                                                                class="bi bi-play-fill"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- اسلاید ۲: ویدیو -->
+                                            <div class="slide-o" data-type="video"
+                                                data-video="asset/img/sliders/fazel.mp4" data-cover="asset/img/3.png">
+                                                <div class="date-o" style="text-align: right;">۲۰ آذر ۱۴۰۰</div>
+                                                <div class="title-o" style="text-align: right;">رازهای موفقیت در
+                                                    شبکه‌های
+                                                    اجتماعی
+                                                </div>
+                                                <div class="description-o" style="text-align: right;">
+                                                    در این قسمت درباره الگوریتم‌های اینستاگرام صحبت می‌کنیم.
+                                                </div>
+                                                <div class="audio-wrapper-o">
+                                                    <div class="custom-player-o">
+                                                        <input type="range" class="volume-o" min="0" max="1" step="0.01"
+                                                            value="1" title="صدا">
+                                                        <span class="volume-icon-o">🔊</span>
+                                                        <input type="range" class="seek-bar-o" value="0" min="0"
+                                                            step="1">
+                                                        <span class="time-o">0:00</span>
+                                                        <button class="play-btn-o" title="پخش/توقف"><i
+                                                                class="bi bi-play-fill"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slide-o" data-type="video"
+                                                data-video="asset/img/sliders/fazel.mp4">
+                                                <div class="date-o" style="text-align: right;">۲۰ آذر ۱۴۰۰</div>
+                                                <div class="title-o" style="text-align: right;">رازهای موفقیت در
+                                                    شبکه‌های
+                                                    اجتماعی
+                                                </div>
+                                                <div class="description-o" style="text-align: right;">
+                                                    در این قسمت درباره الگوریتم‌های اینستاگرام صحبت می‌کنیم.
+                                                </div>
+                                                <div class="audio-wrapper-o">
+                                                    <div class="custom-player-o">
+                                                        <input type="range" class="volume-o" min="0" max="1" step="0.01"
+                                                            value="1" title="صدا">
+                                                        <span class="volume-icon-o">🔊</span>
+                                                        <input type="range" class="seek-bar-o" value="0" min="0"
+                                                            step="1">
+                                                        <span class="time-o">0:00</span>
+                                                        <button class="play-btn-o" title="پخش/توقف"><i
+                                                                class="bi bi-play-fill"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slider-controls-o" id="slider-controls-o"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- media-about end -->
+        <!-- others start -->
+        <section class="others mb-10">
+            <div class="container">
+                <div class="others-title d-flex justify-content-between align-items-center">
+                    <div class="others-title mb-3">
+                        <h3>دپارتمان های <span class="text-primary">آموزشی</span></h3>
+                    </div>
+                </div>
+                <div class="others-main">
+                    <div class="categories-container">
+                        <button class="scroll-btn scroll-left" id="scrollLeft"><i class="bi bi-arrow-left"></i></button>
+
+                        <div class="categories-row" id="categoriesRow">
+                            <div class="categories-item active">
+                                دسته بندی اول
+                            </div>
+                            <div class="categories-item">
+                                دسته بندی دوم
+                            </div>
+                            <div class="categories-item">
+                                دسته بندی سوم
+                            </div>
+                            <div class="categories-item">
+                                دسته بندی چهارم
+                            </div>
+                            <div class="categories-item">
+                                دسته بندی پنجم
+                            </div>
+                            <div class="categories-item">
+                                دسته بندی ششم
+                            </div>
+                            <div class="categories-item">
+                                دسته بندی هفتم
+                            </div>
+                            <div class="categories-item">
+                                دسته بندی هشتم
+                            </div>
+                        </div>
+
+                        <button class="scroll-btn scroll-right" id="scrollRight"><i
+                                class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="products-row row g-2 mb-5">
+                        <div class="col-md-4 mb-3 others-col px-0 px-md-2">
+                            <div class="others-card">
+                                <a href="#">
+                                    <img src="asset/img/3.png" alt="" class="others-img" loading="lazy">
+                                </a>
+                                <div class="others-body">
+                                    <a href="#">
+                                        <h3 class="others-card-title oneline-show">عنوان محصول 1</h3>
+                                    </a>
+                                    <div class="others-card-details d-flex justify-content-between align-items-center ">
+                                        <div class="others-card-details-item">
+                                            <p>دسته بندی</p>
+                                            <span>برنامه نویسی</span>
+                                        </div>
+                                        <div class="others-card-details-border"></div>
+                                        <div class="others-card-details-item">
+                                            <p>نوع دوره</p>
+                                            <span>حضوری</span>
+                                        </div>
+                                        <div class="others-card-details-border"></div>
+                                        <div class="others-card-details-item">
+                                            <p>تعداد جلسات</p>
+                                            <span>20 جلسه</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center others-card-footer">
+                                        <a href="#" class="others-card-footer-link">مشاهده بیشتر</a>
+                                        <div class="others-card-price-box d-flex flex-column align-items-end">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <p class="m-0 accordion others-card-price-off">5,000,000
+                                                </p>
+                                                <small class="others-card-price-off-percent">10 %</small>
+                                            </div>
+                                            <p class="m-0 others-card-price">4,500,000 تومان</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 others-col px-0 px-md-2">
+                            <div class="others-card">
+                                <a href="#">
+                                    <img src="asset/img/3.png" alt="" class="others-img" loading="lazy">
+                                </a>
+                                <div class="others-body">
+                                    <a href="#">
+                                        <h3 class="others-card-title oneline-show">عنوان محصول 1</h3>
+                                    </a>
+                                    <div class="others-card-details d-flex justify-content-between align-items-center ">
+                                        <div class="others-card-details-item">
+                                            <p>دسته بندی</p>
+                                            <span>برنامه نویسی</span>
+                                        </div>
+                                        <div class="others-card-details-border"></div>
+                                        <div class="others-card-details-item">
+                                            <p>نوع دوره</p>
+                                            <span>حضوری</span>
+                                        </div>
+                                        <div class="others-card-details-border"></div>
+                                        <div class="others-card-details-item">
+                                            <p>تعداد جلسات</p>
+                                            <span>20 جلسه</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center others-card-footer">
+                                        <a href="#" class="others-card-footer-link">مشاهده بیشتر</a>
+                                        <div class="others-card-price-box d-flex flex-column align-items-end">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <p class="m-0 accordion others-card-price-off">5,000,000
+                                                </p>
+                                                <small class="others-card-price-off-percent">10 %</small>
+                                            </div>
+                                            <p class="m-0 others-card-price">4,500,000 تومان</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 others-col px-0 px-md-2">
+                            <div class="others-card">
+                                <a href="#">
+                                    <img src="asset/img/3.png" alt="" class="others-img" loading="lazy">
+                                </a>
+                                <div class="others-body">
+                                    <a href="#">
+                                        <h3 class="others-card-title oneline-show">عنوان محصول 1</h3>
+                                    </a>
+                                    <div class="others-card-details d-flex justify-content-between align-items-center ">
+                                        <div class="others-card-details-item">
+                                            <p>دسته بندی</p>
+                                            <span>برنامه نویسی</span>
+                                        </div>
+                                        <div class="others-card-details-border"></div>
+                                        <div class="others-card-details-item">
+                                            <p>نوع دوره</p>
+                                            <span>حضوری</span>
+                                        </div>
+                                        <div class="others-card-details-border"></div>
+                                        <div class="others-card-details-item">
+                                            <p>تعداد جلسات</p>
+                                            <span>20 جلسه</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center others-card-footer">
+                                        <a href="#" class="others-card-footer-link">مشاهده بیشتر</a>
+                                        <div class="others-card-price-box d-flex flex-column align-items-end">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <p class="m-0 accordion others-card-price-off">5,000,000
+                                                </p>
+                                                <small class="others-card-price-off-percent">10 %</small>
+                                            </div>
+                                            <p class="m-0 others-card-price">4,500,000 تومان</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 others-col px-0 px-md-2">
+                            <div class="others-card">
+                                <a href="#">
+                                    <img src="asset/img/3.png" alt="" class="others-img" loading="lazy">
+                                </a>
+                                <div class="others-body">
+                                    <a href="#">
+                                        <h3 class="others-card-title oneline-show">عنوان محصول 1</h3>
+                                    </a>
+                                    <div class="others-card-details d-flex justify-content-between align-items-center ">
+                                        <div class="others-card-details-item">
+                                            <p>دسته بندی</p>
+                                            <span>برنامه نویسی</span>
+                                        </div>
+                                        <div class="others-card-details-border"></div>
+                                        <div class="others-card-details-item">
+                                            <p>نوع دوره</p>
+                                            <span>حضوری</span>
+                                        </div>
+                                        <div class="others-card-details-border"></div>
+                                        <div class="others-card-details-item">
+                                            <p>تعداد جلسات</p>
+                                            <span>20 جلسه</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center others-card-footer">
+                                        <a href="#" class="others-card-footer-link">مشاهده بیشتر</a>
+                                        <div class="others-card-price-box d-flex flex-column align-items-end">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <p class="m-0 accordion others-card-price-off">5,000,000
+                                                </p>
+                                                <small class="others-card-price-off-percent">10 %</small>
+                                            </div>
+                                            <p class="m-0 others-card-price">4,500,000 تومان</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 others-col px-0 px-md-2">
+                            <div class="others-card">
+                                <a href="#">
+                                    <img src="asset/img/3.png" alt="" class="others-img" loading="lazy">
+                                </a>
+                                <div class="others-body">
+                                    <a href="#">
+                                        <h3 class="others-card-title oneline-show">عنوان محصول 1</h3>
+                                    </a>
+                                    <div class="others-card-details d-flex justify-content-between align-items-center ">
+                                        <div class="others-card-details-item">
+                                            <p>دسته بندی</p>
+                                            <span>برنامه نویسی</span>
+                                        </div>
+                                        <div class="others-card-details-border"></div>
+                                        <div class="others-card-details-item">
+                                            <p>نوع دوره</p>
+                                            <span>حضوری</span>
+                                        </div>
+                                        <div class="others-card-details-border"></div>
+                                        <div class="others-card-details-item">
+                                            <p>تعداد جلسات</p>
+                                            <span>20 جلسه</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center others-card-footer">
+                                        <a href="#" class="others-card-footer-link">مشاهده بیشتر</a>
+                                        <div class="others-card-price-box d-flex flex-column align-items-end">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <p class="m-0 accordion others-card-price-off">5,000,000
+                                                </p>
+                                                <small class="others-card-price-off-percent">10 %</small>
+                                            </div>
+                                            <p class="m-0 others-card-price">4,500,000 تومان</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-items position-relative d-flex flex-column">
+                        <hr>
+                        <a href="#" class="btn btn-outline-secondary more-items-btn">مشاهده بیشتر <i class="bi bi-arrow-left ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- others end -->
+        <!-- team start -->
+        <section class="team mb-10">
+            <div class="container">
+                <div class="team-title d-flex justify-content-between align-items-center mb-3">
+                    <div class="team-title">
+                        <h3><span class="text-primary">تیم آموزشی</span> قدرتمند ما</h3>
+                        <span>فانوس هایی در تاریکی...</span>
+                    </div>
+                    <div class="team-timer-and-arrow d-flex justify-content-between align-items-center gap-3">
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <div class="team-arrow-box team-arrow-right">
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                            <div class="team-arrow-box team-arrow-left">
+                                <i class="bi bi-arrow-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-main py-3">
+                    <div id="team-slider" class="splide" style="padding: 0 5px !important;">
+                        <div class="splide__track fix-shadow-margin py-1">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="team-card">
+                                        <a href="#" class="h-100">
+                                            <div class="team-card-img-box">
+                                                <img src="asset/img/3.png" alt="">
+                                            </div>
+                                        </a>
+                                        <div class="team-card-text-box">
+                                            <h4 class="m-0 team-card-title">رضا اواره</h4>
+                                            <p class="m-0 team-card-text">بک اند دولوپر</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="team-card">
+                                        <a href="#" class="h-100">
+                                            <div class="team-card-img-box">
+                                                <img src="asset/img/1.png" alt="">
+                                            </div>
+                                        </a>
+                                        <div class="team-card-text-box">
+                                            <h4 class="m-0 team-card-title">رضا اواره</h4>
+                                            <p class="m-0 team-card-text">بک اند دولوپر</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="team-card">
+                                        <a href="#" class="h-100">
+                                            <div class="team-card-img-box">
+                                                <img src="asset/img/2.png" alt="">
+                                            </div>
+                                        </a>
+                                        <div class="team-card-text-box">
+                                            <h4 class="m-0 team-card-title">رضا اواره</h4>
+                                            <p class="m-0 team-card-text">بک اند دولوپر</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="team-card">
+                                        <a href="#" class="h-100">
+                                            <div class="team-card-img-box">
+                                                <img src="asset/img/4.png" alt="">
+                                            </div>
+                                        </a>
+                                        <div class="team-card-text-box">
+                                            <h4 class="m-0 team-card-title">رضا اواره</h4>
+                                            <p class="m-0 team-card-text">بک اند دولوپر</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="team-card">
+                                        <a href="#" class="h-100">
+                                            <div class="team-card-img-box">
+                                                <img src="asset/img/3.png" alt="">
+                                            </div>
+                                        </a>
+                                        <div class="team-card-text-box">
+                                            <h4 class="m-0 team-card-title">رضا اواره</h4>
+                                            <p class="m-0 team-card-text">بک اند دولوپر</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- team end -->
     </main>
 
     <!-- scripts -->
@@ -546,6 +1968,13 @@
     <script src="asset/js/tiny-slider.js"></script>
     <!-- slider -->
     <script src="asset/js/slider.js"></script>
+    <script src="asset/js/starting-courses.js"></script>
+    <script src="asset/js/main-comments.js"></script>
+    <script src="asset/js/offers.js"></script>
+    <script src="asset/js/amasings.js"></script>
+    <script src="asset/js/main-media.js"></script>
+    <script src="asset/js/others.js"></script>
+    <script src="asset/js/team.js"></script>
 </body>
 
 </html>

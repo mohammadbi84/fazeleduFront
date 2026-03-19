@@ -1,0 +1,259 @@
+.starting-courses-timer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f2f2f2;
+    padding: 12px 14px 14px;
+    border-radius: 16px 16px 0px 0px;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.starting-courses-timer .timer-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.starting-courses-timer .timer-shadow-box {
+    position: absolute;
+    background-color: #00ff8600;
+    content: "";
+    right: -15px;
+    bottom: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 16px;
+    height: 15px;
+    width: 15px;
+    box-shadow: #f2f2f2 -4px 4px 0px 4px;
+    z-index: 0;
+}
+
+.starting-courses-timer .timer-counter {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.starting-courses-timer .timer-label {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+.starting-courses-arrow-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.starting-courses-arrow-box:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.starting-courses-arrow-box i {
+    position: relative;
+    top: 2px;
+}
+
+
+.starting-courses-main {
+    background-color: #f2f2f2;
+    width: 100%;
+    border-radius: 16px;
+    border-top-left-radius: 0;
+    position: relative;
+    z-index: 0;
+}
+
+
+.starting-courses-card {
+    height: 350px;
+    background-color: #ffffff;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px !important;
+    position: relative;
+}
+
+.starting-courses-card::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    transition: 0.3s;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    border-radius: 18px;
+    transform: translate(2px, -2px) scale(0.9);
+    margin: auto;
+}
+
+.starting-courses-card:hover::before {
+    transform: translate(2px, -2px) scale(1);
+}
+
+.starting-courses-card-img-box {
+    height: 164px !important;
+    width: 100%;
+    position: relative;
+}
+
+.starting-courses-card-img-box img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 16px !important;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.starting-courses-card-title {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    padding-right: 10px;
+    margin: 12px 0 10px;
+}
+
+.starting-courses-card-title::before {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 89%;
+    border-radius: 4px;
+    background: linear-gradient(180deg, var(--primary) 0%, var(--primary-hover) 100%);
+    top: 2px;
+    bottom: 1px;
+    right: 0;
+}
+
+.starting-courses-card-details {
+    margin-bottom: 15px;
+    height: 48px;
+    background-color: #FFFFFF;
+    padding: 5px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px 0px #6666661A inset;
+}
+
+.starting-courses-card-details-item {
+    font-weight: 500;
+    display: -webkit-box !important;
+    overflow: hidden !important;
+    line-clamp: 1;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    text-align: center;
+}
+
+.starting-courses-card-details-item p {
+    color: rgba(102, 102, 102, 0.50);
+    font-size: 11px;
+    margin: 0;
+}
+
+.starting-courses-card-details-item span {
+    color: #666;
+    font-size: 12px;
+}
+
+.starting-courses-card-details-border {
+    width: 1px;
+    height: 32px;
+    background: #EAEAEA;
+}
+
+
+.starting-courses-card-footer {
+    height: 42px;
+}
+
+.starting-courses-card-footer-link {
+    padding: 5px 18px 7px 18px;
+    align-items: center;
+    border-radius: 8px;
+    background: linear-gradient(258deg, var(--primary) 0%, var(--primary-hover) 100%);
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.starting-courses-card-footer-link:hover {
+    padding-left: 30px !important;
+}
+
+.starting-courses-card-footer-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    clip-path: path(' M0.198214 7.47588C0.0723214 7.3501 0 7.18057 0 7.0001C0 6.81963 0.0723214 6.6501 0.198214 6.52432L4.9125 1.93057C5.16964 1.679 5.57679 1.68994 5.82054 1.95244C6.06429 2.21494 6.05625 2.63057 5.79911 2.8794L2.24732 6.34385H11.3571C11.7134 6.34385 12 6.63643 12 7.0001C12 7.36377 11.7134 7.65635 11.3571 7.65635H2.24732L5.80179 11.1181C6.05893 11.3696 6.06696 11.7825 5.82321 12.045C5.57946 12.3075 5.17232 12.3157 4.91518 12.0669L0.200893 7.47314L0.198214 7.47588Z ');
+    background: #ffffff;
+    width: 13px;
+    height: 14px;
+    transform: translateX(0);
+}
+
+.starting-courses-card-footer-link:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(10px);
+}
+
+.starting-courses-card-price-off {
+    color: rgba(102, 102, 102, 0.50);
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration-line: line-through;
+}
+
+.starting-courses-card-price-off-percent {
+    border-radius: 4px;
+    background: #EBB40F;
+    color: #FFF;
+    text-shadow: 0 1px 0 rgba(51, 51, 51, 0.20);
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 25px;
+    height: 16px;
+    display: inline-block;
+    padding: 2px;
+    padding-top: 3px;
+    line-height: 12px;
+}
+
+.starting-courses-card-price {
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 500;
+}

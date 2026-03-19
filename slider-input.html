@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اسلایدر صدا پیشرفته</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        /* استایل کلی اینپوت */
+        input[type=range].volume-o {
+            -webkit-appearance: none;
+            width: 300px;
+            height: 6px;
+            background: #ddd;
+            /* رنگ پیش‌فرض (خالی) اینجا قرار می‌گیرد */
+            cursor: pointer;
+            outline: none;
+            border-radius: 3px;
+        }
+
+        /* استایل دایره (Thumb) */
+        input[type=range].volume-o::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #ff5722;
+            cursor: pointer;
+            margin-top: -7px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* استایل خط (Track) - همان کدی که خواستید تغییر کند */
+        input[type=range].volume-o::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 6px;
+            cursor: pointer;
+            background: transparent;
+            /* اینجا را شفاف می‌کنیم تا رنگ اینپوت دیده شود */
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="range" class="volume-o" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" title="صدا">
+
+    <script>
+        const slider = document.getElementById('volumeSlider');
+
+        function updateSliderBackground() {
+            const value = slider.value;
+            const min = slider.min;
+            const max = slider.max;
+
+            // محاسبه درصد مقدار فعلی
+            const percentage = ((value - min) * 100) / (max - min);
+
+            slider.style.background = `linear-gradient(to left, #ff5722 0%, #ff5722 ${percentage}%, #ddd ${percentage}%, #ddd 100%)`;
+        }
+
+        // اجرای اولیه
+        updateSliderBackground();
+
+        // آپدیت کردن هنگام کشیدن اسلایدر
+        slider.addEventListener('input', updateSliderBackground);
+    </script>
+
+</body>
+
+</html>

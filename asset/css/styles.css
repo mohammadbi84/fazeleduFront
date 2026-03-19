@@ -117,11 +117,10 @@
     --warning: #facc15;
 }
 
-
 body {
     font-family: "IRANSansX";
     background-color: var(--bg-main);
-    min-height: 200vh;
+    min-height: 400vh;
 }
 
 h1,
@@ -138,15 +137,22 @@ p {
     line-height: 1.8;
 }
 
-.text-justify{
+a{
+    text-decoration: none;
+}
+
+.text-justify {
     text-align: justify !important;
 }
+
 .text-muted {
     color: var(--text-muted) !important;
 }
+
 .text-primary {
     color: var(--primary) !important;
 }
+
 .text-accent {
     color: var(--accent) !important;
 }
@@ -162,6 +168,7 @@ p {
     background-color: var(--primary-hover);
     border-color: var(--primary-hover);
 }
+
 .btn-more-info {
     background-color: #ffcc0072;
     border: 1px dashed var(--accent);
@@ -206,6 +213,22 @@ p {
 .form-control:focus {
     border-color: var(--primary);
     box-shadow: 0 0 0 0.2rem rgba(0, 178, 255, 0.2);
+}
+
+.mb-10 {
+    margin-bottom: 75px;
+}
+
+.line-height-5 {
+    line-height: 33px;
+}
+
+.oneline-show {
+    display: -webkit-box !important;
+    overflow: hidden !important;
+    line-clamp: 1;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical !important;
 }
 
 /* .navbar {

@@ -81,11 +81,11 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 1,
       username: "travel_lover",
-      profileImg: "/asset/img/1.png",
+      profileImg: "asset/img/1.png",
       content: [
         {
           type: "image",
-          url: "/asset/img/1.png",
+          url: "asset/img/1.png",
           duration: 5,
         },
       ],
@@ -94,11 +94,11 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 2,
       username: "foodie_adventures",
-      profileImg: "/asset/img/2.png",
+      profileImg: "asset/img/2.png",
       content: [
         {
           type: "image",
-          url: "/asset/img/2.png",
+          url: "asset/img/2.png",
           duration: 5,
         },
       ],
@@ -107,11 +107,11 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 3,
       username: "fitness_guru",
-      profileImg: "/asset/img/3.png",
+      profileImg: "asset/img/3.png",
       content: [
         {
           type: "image",
-          url: "/asset/img/3.png",
+          url: "asset/img/3.png",
           duration: 5,
         },
       ],
@@ -120,11 +120,11 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 4,
       username: "tech_geek",
-      profileImg: "/asset/img/4.png",
+      profileImg: "asset/img/4.png",
       content: [
         {
           type: "image",
-          url: "/asset/img/4.png",
+          url: "asset/img/4.png",
           duration: 20,
         },
       ],

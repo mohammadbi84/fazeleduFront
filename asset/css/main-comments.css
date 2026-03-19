@@ -1,0 +1,172 @@
+.testimonial-slider {
+    max-width: 850px;
+    position: relative;
+}
+
+.main-comments-swiper {
+    padding: 40px 0 60px;
+    z-index: 0;
+}
+
+.main-comments-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.main-comments-card {
+    width: 94%;
+    height: 250px;
+    max-width: 732px;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 20px;
+    position: relative;
+    /* box-shadow: 0 20px 40px #0001; */
+    border: 1px solid #e9e9e9;
+}
+
+/* کارت‌های کج زیر کارت اصلی */
+.main-comments-swiper::before,
+.main-comments-swiper::after {
+    content: "";
+    position: absolute;
+    width: 93%;
+    height: 77%;
+    background: #fff;
+    border-radius: 20px;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* box-shadow: 0 15px 30px #0001; */
+    z-index: -1;
+    border: 1px solid #e9e9e9;
+}
+
+.main-comments-swiper::before {
+    transform: translateX(-50%) rotate(-4deg);
+}
+
+.main-comments-swiper::after {
+    transform: translateX(-50%) rotate(-1.5deg);
+}
+
+.main-comments-swiper .swiper-pagination-bullet-active {
+    background-color: var(--primary) !important;
+    width: 20px !important;
+    border-radius: 5px;
+}
+
+/* ستاره‌ها */
+.main-comments-card .stars {
+    color: gold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* متن */
+.main-comments-card p {
+    line-height: 2;
+    margin-bottom: 0;
+
+    display: -webkit-box !important;
+    overflow: hidden !important;
+    line-clamp: 4;
+    -webkit-line-clamp: 4 !important;
+    -webkit-box-orient: vertical !important;
+
+    text-align: justify;
+}
+
+/* بخش کاربر */
+.main-comments-card .user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-comments-card .user .counter {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--accent);
+    /* object-fit: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 4px;
+    color: #fff;
+    box-shadow: 0px 5px 11px 0px #d1d1d1;
+}
+
+.main-comments-card .user h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.main-comments-card .user span {
+    font-size: 16px;
+    color: gray;
+}
+
+.main-comments-card .comment-title {
+    color: #333;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.etemad {
+    color: #10a040;
+}
+
+.commetn-text {
+    text-align: justify;
+    font-size: 16px;
+    color: #555555;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.main-comments-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #f2f2f2;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: none;
+}
+
+
+.main-comments-swiper:hover .main-comments-arrow {
+    display: flex;
+}
+
+
+.main-comments-arrow:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+
+.main-comments-arrow i {
+    position: relative;
+    top: 2px;
+}
+
+
+.main-comments-arrow-right {
+    right: 4px;
+}
+
+.main-comments-arrow-left {
+    left: 4px;
+}

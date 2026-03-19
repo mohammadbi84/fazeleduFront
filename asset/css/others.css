@@ -1,0 +1,330 @@
+.categories-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    padding: 10px 0;
+    direction: ltr;
+    /* کانتینر اصلی LTR بمونه */
+}
+
+.categories-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 0 10px;
+    gap: 10px;
+    direction: rtl;
+    /* آیتم‌ها از راست شروع بشن */
+
+    /* مخفی کردن اسکرول‌بار */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.categories-row::-webkit-scrollbar {
+    display: none;
+}
+
+.categories-item {
+    flex: 0 0 auto;
+    border-radius: 8px;
+    padding: 8px 15px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.categories-item:hover {
+    background-color: #e9ecef;
+}
+
+.categories-item.active {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    background-color: var(--primary, #007bff);
+    color: #fff;
+}
+
+.scroll-btn {
+    flex: 0 0 auto;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--primary);
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    margin: 0 5px;
+    z-index: 0;
+    color: #333;
+}
+
+.scroll-btn i {
+    position: relative;
+    top: 2px;
+}
+
+.scroll-btn:hover {
+    background-color: var(--primary, #007bff);
+    color: white;
+    transform: scale(1.1);
+}
+
+.scroll-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* تنظیم مجدد ترتیب برای RTL */
+.scroll-right {
+    order: 3;
+    /* دکمه راست می‌ره到最后 */
+}
+
+.scroll-left {
+    order: 1;
+    /* دکمه چپ می‌ره به اول */
+}
+
+.categories-row {
+    order: 2;
+    flex: 1;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    .scroll-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+}
+
+
+
+.others-card {
+    /* width: 450px; */
+    height: 165px;
+    padding: 13px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    background: #FFF;
+    border-radius: 16px;
+    box-shadow: 0px 8px 24px 0px #3333331A;
+    position: relative;
+}
+
+.others-card::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    transition: 0.3s;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    border-radius: 18px;
+    transform: translate(2px, -2px) scale(0.9);
+    margin: auto;
+}
+
+.others-card:hover::before {
+    transform: translate(2px, -2px) scale(1);
+}
+
+.others-img {
+    width: 133px !important;
+    height: 133px !important;
+    border-radius: 12px !important;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.others-body {
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    /* width: 269px; */
+    width: 100%;
+}
+
+.others-card-title {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.others-card-title::before {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 89%;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #FFCC34 0%, #EBB40F 100%);
+    top: 2px;
+    bottom: 1px;
+    right: 0;
+}
+
+.others-card-details {
+    height: 48px;
+    background-color: #FFFFFF;
+    padding: 5px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px 0px #6666661A inset;
+}
+
+.others-card-details-item {
+    font-weight: 500;
+    display: -webkit-box !important;
+    overflow: hidden !important;
+    line-clamp: 1;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    text-align: center;
+}
+
+.others-card-details-item p {
+    color: rgba(102, 102, 102, 0.50);
+    font-size: 11px;
+    margin: 0;
+}
+
+.others-card-details-item span {
+    color: #666;
+    font-size: 12px;
+}
+
+.others-card-details-border {
+    width: 1px;
+    height: 32px;
+    background: #EAEAEA;
+}
+
+
+.others-card-footer {
+    height: 42px;
+}
+
+.others-card-footer-link {
+    padding: 5px 18px 7px 18px;
+    align-items: center;
+    border-radius: 8px;
+    background: linear-gradient(258deg, var(--primary) 0%, var(--primary-hover) 100%);
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.others-card-footer-link:hover {
+    padding-left: 30px !important;
+}
+
+.others-card-footer-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    clip-path: path(' M0.198214 7.47588C0.0723214 7.3501 0 7.18057 0 7.0001C0 6.81963 0.0723214 6.6501 0.198214 6.52432L4.9125 1.93057C5.16964 1.679 5.57679 1.68994 5.82054 1.95244C6.06429 2.21494 6.05625 2.63057 5.79911 2.8794L2.24732 6.34385H11.3571C11.7134 6.34385 12 6.63643 12 7.0001C12 7.36377 11.7134 7.65635 11.3571 7.65635H2.24732L5.80179 11.1181C6.05893 11.3696 6.06696 11.7825 5.82321 12.045C5.57946 12.3075 5.17232 12.3157 4.91518 12.0669L0.200893 7.47314L0.198214 7.47588Z ');
+    background: #ffffff;
+    width: 13px;
+    height: 14px;
+    transform: translateX(0);
+}
+
+.others-card-footer-link:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(10px);
+}
+
+
+.others-card-price-off {
+    color: rgba(102, 102, 102, 0.50);
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration-line: line-through;
+}
+
+.others-card-price-off-percent {
+    border-radius: 4px;
+    background: #EBB40F;
+    color: #FFF;
+    text-shadow: 0 1px 0 rgba(51, 51, 51, 0.20);
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 25px;
+    height: 16px;
+    display: inline-block;
+    padding: 2px;
+    padding-top: 3px;
+    line-height: 12px;
+}
+
+.others-card-price {
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.more-items-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-main);
+}
+
+.more-items-btn i {
+    position: relative;
+    top: 2px;
+}
+
+.more-items-btn:hover i {
+    position: relative;
+    top: 2px;
+    transition: all 0.3s ease;
+}
+
+.more-items-btn i::before {
+    transition: all 0.3s ease;
+}
+
+.more-items-btn:hover i::before {
+    rotate: -90deg;
+}
